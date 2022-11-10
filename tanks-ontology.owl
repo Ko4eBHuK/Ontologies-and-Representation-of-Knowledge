@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#"
+     xml:base="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:tanks="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#accuracy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#accuracy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#aimTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#aimTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#dmgPerShot -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#dmgPerShot">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#dpm -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#dpm">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#enginePowerDensity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#enginePowerDensity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hp">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#size -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#size">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Platoon"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Team"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#speed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#speed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#tier -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#tier">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vehicleTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vehicleTitle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#viewRange -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#viewRange">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Battle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Battle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Platoon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Platoon"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Team -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Team"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
