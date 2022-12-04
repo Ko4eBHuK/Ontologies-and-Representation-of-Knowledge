@@ -25,7 +25,6 @@
     <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasClanmate -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasClanmate">
-        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasMate"/>
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasMate"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
@@ -39,8 +38,6 @@
     <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasMate -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasMate">
-        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasPlatoonmate"/>
-        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasTeammate"/>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
@@ -56,6 +53,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasMember">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isMemberOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Association"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player"/>
     </owl:ObjectProperty>
@@ -79,8 +78,21 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasStatistic">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isStatisticOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasTeam -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasTeam">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Battle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Team"/>
     </owl:ObjectProperty>
     
 
@@ -101,10 +113,9 @@
     <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isMemberOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isMemberOf">
-        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isMemberOfClan"/>
-        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isMemberOfPlatoon"/>
-        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isMemberOfTeam"/>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Association"/>
     </owl:ObjectProperty>
@@ -165,6 +176,28 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isStatisticOf">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#tankStatisticOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#tankStatisticOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#tankStatisticOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#tankStatisticOn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"/>
     </owl:ObjectProperty>
     
 
@@ -687,6 +720,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#rapidModeProperties -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#rapidModeProperties">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#shots -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#shots">
@@ -694,6 +735,15 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment>Произведено выстрелов</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeModeProperties -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeModeProperties">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SiegeMode"/>
     </owl:DatatypeProperty>
     
 
@@ -873,6 +923,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults"/>
+    
+
+
     <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan">
@@ -893,7 +949,51 @@
 
     <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Member -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Member"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Member">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#ClanMember"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlatoonMember"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TeamMember"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#china"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#czech"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#france"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#germany"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#italy"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#japan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#poland"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#sweden"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#uk"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#usa"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#ussr"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
     
 
 
@@ -926,9 +1026,50 @@
     
 
 
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#RapidMode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#RapidMode"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SiegeMode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SiegeMode"/>
+    
+
+
     <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TankClass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TankClass">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#AT-SPG"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SPG"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#heavyTank"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#lightTank"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#mediumTank"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
     
 
 
@@ -945,6 +1086,214 @@
     <owl:Class rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TeamMember">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Member"/>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#AT-SPG -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#AT-SPG">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TankClass"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SPG -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SPG">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TankClass"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#china -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#china">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#czech -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#czech">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#france -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#france">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#germany -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#germany">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#heavyTank -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#heavyTank">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TankClass"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#italy -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#italy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#japan -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#japan">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#lightTank -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#lightTank">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TankClass"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#mediumTank -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#mediumTank">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TankClass"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#poland -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#poland">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#sweden -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#sweden">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#uk -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#uk">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#usa -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#usa">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#ussr -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#ussr">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation"/>
+    </owl:Thing>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Association"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Battle"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#RapidMode"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SiegeMode"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TankClass"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#AT-SPG"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SPG"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#heavyTank"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#lightTank"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#mediumTank"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#china"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#czech"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#france"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#germany"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#italy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#japan"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#poland"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#sweden"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#uk"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#usa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#ussr"/>
+        </owl:distinctMembers>
+    </rdf:Description>
 </rdf:RDF>
 
 
