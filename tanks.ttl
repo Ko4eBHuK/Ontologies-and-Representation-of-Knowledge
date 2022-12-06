@@ -1,4 +1,5 @@
 @prefix : <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -8,7 +9,32 @@
 @base <urn:absolute:okladnikov.tanks> .
 
 <urn:absolute:okladnikov.tanks> rdf:type owl:Ontology ;
-                                 rdfs:label "\"Tanks ontology\""@en .
+                                 dc:creator "Okladnikov Constantine"@en ;
+                                 dc:description "Ontology describes domain model of \"Mir tankov\" computer game"@en ,
+                                                "Отнология Tanks (Танки) описывает доменную модель игры \"Мир танков\""@ru ;
+                                 dc:publisher "Okladnikov Constantine"@en ;
+                                 dc:title "Tanks"@en ,
+                                          "Танки"@ru .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+dc:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/publisher
+dc:publisher rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
 
 #################################################################
 #    Object Properties
@@ -230,7 +256,6 @@
 ###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#takePartIn
 :takePartIn rdf:type owl:ObjectProperty ,
                      owl:AsymmetricProperty ,
-                     owl:TransitiveProperty ,
                      owl:IrreflexiveProperty ;
             rdfs:domain :Association ,
                         :Player ;
