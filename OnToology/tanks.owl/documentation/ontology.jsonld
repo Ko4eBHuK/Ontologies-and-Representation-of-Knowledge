@@ -1,0 +1,2477 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Team"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasTeam"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "2"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    }, {
+      "@id" : "_:genid12"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#china"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#czech"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#france"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#germany"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#italy"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#japan"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#poland"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#sweden"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#uk"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#usa"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#ussr"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasMember"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "2"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasMember"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    }, {
+      "@id" : "_:genid28"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#AT-SPG"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SPG"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#heavyTank"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#lightTank"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#mediumTank"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player"
+    }, {
+      "@id" : "_:genid5"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasMember"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "15"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Association"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Battle"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#RapidMode"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SiegeMode"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TankType"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#AT-SPG"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SPG"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#heavyTank"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#lightTank"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#mediumTank"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#ClanMember"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlatoonMember"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TeamMember"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid54",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#china"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#czech"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#france"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#germany"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#italy"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#japan"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#poland"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#sweden"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#uk"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#usa"
+    }, {
+      "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#ussr"
+    } ]
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#AT-SPG",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Thing" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TankType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Association",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Battle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  }, {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Association"
+  }, {
+    "@id" : "_:genid2"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Platoon"
+  }, {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Team"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#ClanMember",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Member"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Member",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid10"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Platoon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Association"
+  }, {
+    "@id" : "_:genid25"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Team"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlatoonMember",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Member"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#RapidMode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SPG",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Thing" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TankType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SiegeMode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TankType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid26"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Team",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Association"
+  }, {
+    "@id" : "_:genid35"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TeamMember",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Member"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#accountId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#avgDamageAssisted",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Средний урон, нанесённый с вашей помощью. Значение считается с версии игры 8.8."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#avgDamageAssistedRadio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Средний урон по вашим разведданным. Значение считается с версии игры 8.8."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#avgDamageAssistedTrack",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Средний урон после вашего попадания, сбившего гусеницу. Значение считается с версии игры 8.8."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#avgDamageBlocked",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Средний заблокированный бронёй урон за бой. Заблокированный бронёй урон — это урон от снарядов (бронебойных, кумулятивных и подкалиберных), которые попали в танк, но не нанесли урона. Значение считается с версии игры 9.0."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResDamage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#battleResultsProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResFrags",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#battleResultsProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResPlayerClanTag",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#battleResultsProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResPlayerName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#battleResultsProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResTank",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#battleResultsProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResXp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#battleResultsProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#battleAvgXp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Средний опыт за бой"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#battleId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Battle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#battleResultsProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#battles",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Проведено боёв"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#battlesOnStunningVehicles",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Количество боёв на технике, причиняющей оглушение"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#capturePoints",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Очки захвата базы"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#china",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Thing" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#clanId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan"
+  }, {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#clanProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#clanProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankAccountId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankAvgDamageBlocked",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankBattleAvgXp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankBattles",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankBattlesOnStunningVehicles",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankCapturePoints",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankDamageDealt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankDamageReceived",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankDirectHitsReceived",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankDraws",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankDroppedCapturePoints",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankExplosionHits",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankExplosionHitsReceived",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankFrags",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankHits",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankHitsPercents",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankLosses",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankMarkOfMastery",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankMaxFrags",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankMaxXp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankNoDamageDirectHitsReceived",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankPiercings",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankPiercingsReceived",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankShots",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankSpotted",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStunAssistedDamage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStunNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankSurvivedBattles",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankTankId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankTankingFactor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankWins",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankXp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#creatorId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#clanProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#creatorName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#clanProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#czech",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Thing" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#damageDealt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Нанесено повреждений"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#damageReceived",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Получено урона"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#clanProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#directHitsReceived",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Количество полученных прямых попаданий"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#draws",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Ничьи"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#droppedCapturePoints",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Очки защиты базы"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#explosionHits",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Количество нанесённых осколочно-фугасных попаданий"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#explosionHitsReceived",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Количество полученных осколочно-фугасных попаданий"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#frags",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Уничтожено техники"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#france",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Thing" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#germany",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Thing" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#globalRating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Личный рейтинг"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasBattleResults",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasClanMember",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#ClanMember"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasMember"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isMemberOfClan"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasClanmate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#ClanMember"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#ClanMember"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasMate"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasMate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasMember",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Association"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isMemberOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasNation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasPlatoonMember",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Platoon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlatoonMember"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasMember"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isMemberOfPlatoon"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasPlatoonmate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlatoonMember"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlatoonMember"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasMate"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasRapidMode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#RapidMode"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasResults",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Battle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isResultsOfBattle"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasSiegeMode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SiegeMode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasStatistic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isStatisticOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasTeam",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Battle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Team"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasTeamMember",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Team"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TeamMember"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasMember"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isMemberOfTeam"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasTeammate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TeamMember"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TeamMember"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasMate"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TankType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#heavyTank",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Thing" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TankType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hits",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Попадания"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hitsPercents",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Процент попаданий"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isMemberOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Association"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isMemberOfClan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#ClanMember"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isMemberOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isMemberOfPlatoon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlatoonMember"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Platoon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isMemberOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isMemberOfTeam",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TeamMember"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Team"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isMemberOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isResultsOfBattle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Battle"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isResultsOfPlayer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isStatisticOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#italy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Thing" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#japan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Thing" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#leaderId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#clanProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#leaderName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#clanProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#lightTank",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Thing" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TankType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#losses",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Поражения"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#maxDamage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Максимальный урон за бой"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#maxFrags",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Максимум уничтожено за бой"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#maxXp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Максимальный опыт за бой"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#mediumTank",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Thing" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TankType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#membersCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#clanProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#motto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#clanProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#clanProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#nickName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#noDamageDirectHitsReceived",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Количество полученных прямых попаданий, не нанёсших урон"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#oldName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#clanProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#piercings",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Количество пробитий"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#piercingsReceived",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Количество полученных пробитий"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playedOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#poland",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Thing" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#rapidModeProperties",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#RapidMode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyDisjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeModeProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#rapidSpeedBackward",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#RapidMode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#rapidModeProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#rapidSpeedForward",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#RapidMode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#rapidModeProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#rapidSuspensionSteeringLockAngle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#RapidMode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#rapidModeProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#rapidSwitchOffTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#RapidMode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#rapidModeProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#rapidSwitchOnTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#RapidMode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#rapidModeProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#shots",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Произведено выстрелов"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeDispersion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SiegeMode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeModeProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeModeProperties",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SiegeMode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeMoveDownArc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SiegeMode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeModeProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeMoveUpArc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SiegeMode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeModeProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeReloadTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SiegeMode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeModeProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeSpeedBackward",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SiegeMode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeModeProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeSuspensionTraverseSpeed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SiegeMode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeModeProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeSwitchOffTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SiegeMode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeModeProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeSwitchOnTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SiegeMode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeModeProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#spotted",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Обнаружено противников"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#stunNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Количество оглушений, причинённых экипажу противника"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#survivedBattles",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Выжил в боях"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#sweden",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Thing" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#tag",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#clanProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#takePartIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Association"
+  }, {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Association"
+  }, {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Battle"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#tankStatisticOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#tankStatisticOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#tankingFactor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Отношение заблокированного бронёй урона к полученному игроком урону от бронебойных, кумулятивных, подкалиберных снарядов. Значение считается с версии игры 9.0."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#treesCut",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Количество поваленных деревьев"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#uk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Thing" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#usa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Thing" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#ussr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Thing" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleArmorHullFront",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleArmorHullRear",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleArmorHullSides",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleArmorTurretFront",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleArmorTurretRear",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleArmorTurretSides",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleFireChance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleGunAimTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleGunCaliber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleGunDispersion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleGunFireRate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleGunMoveDownArc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleGunMoveUpArc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleGunReloadTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleGunTraverseSpeed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleHp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleIsWheeled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleModulesEngineId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleModulesGunId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleModulesRadioId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleModulesSuspensionId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleModulesTurretId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechiclePower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleShortName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleSpeedBackward",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleSpeedForward",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleTag",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleTankId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleTier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleTurretTraverseSpeed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleViewRange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#wins",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Победы"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#xp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Суммарный опыт"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+} ]
