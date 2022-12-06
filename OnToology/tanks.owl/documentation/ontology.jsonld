@@ -209,9 +209,6 @@
     } ]
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
-}, {
   "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#AT-SPG",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Thing" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -2473,5 +2470,12 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+}, {
+  "@id" : "urn:absolute:okladnikov.tanks",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "\"Tanks ontology\""
   } ]
 } ]

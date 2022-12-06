@@ -1,0 +1,1605 @@
+@prefix : <urn:absolute:okladnikov.tanks#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <urn:absolute:okladnikov.tanks#> .
+
+<urn:absolute:okladnikov.tanks> rdf:type owl:Ontology ;
+                                 rdfs:label "\"Tanks ontology\""@en .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasBattleResults
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasBattleResults> rdf:type owl:ObjectProperty ;
+                                                                                rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                rdf:type owl:AsymmetricProperty ,
+                                                                                         owl:IrreflexiveProperty ;
+                                                                                rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player> ;
+                                                                                rdfs:range <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasClanMember
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasClanMember> rdf:type owl:ObjectProperty ;
+                                                                             rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasMember> ;
+                                                                             owl:inverseOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isMemberOfClan> ;
+                                                                             rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan> ;
+                                                                             rdfs:range <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#ClanMember> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasClanmate
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasClanmate> rdf:type owl:ObjectProperty ;
+                                                                           rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasMate> ;
+                                                                           rdf:type owl:SymmetricProperty ,
+                                                                                    owl:TransitiveProperty ,
+                                                                                    owl:IrreflexiveProperty ;
+                                                                           rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#ClanMember> ;
+                                                                           rdfs:range <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#ClanMember> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasMate
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasMate> rdf:type owl:ObjectProperty ;
+                                                                       rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                       rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player> ;
+                                                                       rdfs:range <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasMember
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasMember> rdf:type owl:ObjectProperty ;
+                                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                         owl:inverseOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isMemberOf> ;
+                                                                         rdf:type owl:AsymmetricProperty ,
+                                                                                  owl:IrreflexiveProperty ;
+                                                                         rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Association> ;
+                                                                         rdfs:range <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasNation
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasNation> rdf:type owl:ObjectProperty ;
+                                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                         rdf:type owl:FunctionalProperty ,
+                                                                                  owl:AsymmetricProperty ,
+                                                                                  owl:IrreflexiveProperty ;
+                                                                         rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                         rdfs:range <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasPlatoonMember
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasPlatoonMember> rdf:type owl:ObjectProperty ;
+                                                                                rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasMember> ;
+                                                                                owl:inverseOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isMemberOfPlatoon> ;
+                                                                                rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Platoon> ;
+                                                                                rdfs:range <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlatoonMember> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasPlatoonmate
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasPlatoonmate> rdf:type owl:ObjectProperty ;
+                                                                              rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasMate> ;
+                                                                              rdf:type owl:SymmetricProperty ,
+                                                                                       owl:TransitiveProperty ,
+                                                                                       owl:IrreflexiveProperty ;
+                                                                              rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlatoonMember> ;
+                                                                              rdfs:range <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlatoonMember> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasRapidMode
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasRapidMode> rdf:type owl:ObjectProperty ,
+                                                                                     owl:FunctionalProperty ,
+                                                                                     owl:AsymmetricProperty ,
+                                                                                     owl:IrreflexiveProperty ;
+                                                                            rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                            rdfs:range <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#RapidMode> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasResults
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasResults> rdf:type owl:ObjectProperty ;
+                                                                          owl:inverseOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isResultsOfBattle> ;
+                                                                          rdf:type owl:AsymmetricProperty ,
+                                                                                   owl:IrreflexiveProperty ;
+                                                                          rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Battle> ;
+                                                                          rdfs:range <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasSiegeMode
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasSiegeMode> rdf:type owl:ObjectProperty ;
+                                                                            rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                            rdf:type owl:FunctionalProperty ,
+                                                                                     owl:AsymmetricProperty ,
+                                                                                     owl:IrreflexiveProperty ;
+                                                                            rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                            rdfs:range <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SiegeMode> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasStatistic
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasStatistic> rdf:type owl:ObjectProperty ;
+                                                                            owl:inverseOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isStatisticOf> ;
+                                                                            rdf:type owl:AsymmetricProperty ,
+                                                                                     owl:IrreflexiveProperty ;
+                                                                            rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player> ;
+                                                                            rdfs:range <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasTeam
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasTeam> rdf:type owl:ObjectProperty ;
+                                                                       rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                       rdf:type owl:AsymmetricProperty ,
+                                                                                owl:IrreflexiveProperty ;
+                                                                       rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Battle> ;
+                                                                       rdfs:range <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Team> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasTeamMember
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasTeamMember> rdf:type owl:ObjectProperty ;
+                                                                             rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasMember> ;
+                                                                             owl:inverseOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isMemberOfTeam> ;
+                                                                             rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Team> ;
+                                                                             rdfs:range <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TeamMember> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasTeammate
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasTeammate> rdf:type owl:ObjectProperty ;
+                                                                           rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasMate> ;
+                                                                           rdf:type owl:SymmetricProperty ,
+                                                                                    owl:TransitiveProperty ,
+                                                                                    owl:IrreflexiveProperty ;
+                                                                           rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TeamMember> ;
+                                                                           rdfs:range <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TeamMember> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasType
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasType> rdf:type owl:ObjectProperty ;
+                                                                       rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                       rdf:type owl:FunctionalProperty ,
+                                                                                owl:AsymmetricProperty ,
+                                                                                owl:IrreflexiveProperty ;
+                                                                       rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                       rdfs:range <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TankType> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isMemberOf
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isMemberOf> rdf:type owl:ObjectProperty ;
+                                                                          rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                          rdf:type owl:AsymmetricProperty ,
+                                                                                   owl:IrreflexiveProperty ;
+                                                                          rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player> ;
+                                                                          rdfs:range <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Association> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isMemberOfClan
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isMemberOfClan> rdf:type owl:ObjectProperty ;
+                                                                              rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isMemberOf> ;
+                                                                              rdf:type owl:FunctionalProperty ,
+                                                                                       owl:AsymmetricProperty ;
+                                                                              rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#ClanMember> ;
+                                                                              rdfs:range <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isMemberOfPlatoon
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isMemberOfPlatoon> rdf:type owl:ObjectProperty ;
+                                                                                 rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isMemberOf> ;
+                                                                                 rdf:type owl:AsymmetricProperty ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlatoonMember> ;
+                                                                                 rdfs:range <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Platoon> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isMemberOfTeam
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isMemberOfTeam> rdf:type owl:ObjectProperty ;
+                                                                              rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isMemberOf> ;
+                                                                              rdf:type owl:AsymmetricProperty ;
+                                                                              rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TeamMember> ;
+                                                                              rdfs:range <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Team> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isResultsOfBattle
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isResultsOfBattle> rdf:type owl:ObjectProperty ,
+                                                                                          owl:FunctionalProperty ,
+                                                                                          owl:AsymmetricProperty ,
+                                                                                          owl:IrreflexiveProperty ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults> ;
+                                                                                 rdfs:range <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Battle> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isResultsOfPlayer
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isResultsOfPlayer> rdf:type owl:ObjectProperty ,
+                                                                                          owl:FunctionalProperty ,
+                                                                                          owl:AsymmetricProperty ,
+                                                                                          owl:IrreflexiveProperty ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults> ;
+                                                                                 rdfs:range <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isStatisticOf
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#isStatisticOf> rdf:type owl:ObjectProperty ;
+                                                                             rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> ;
+                                                                             rdfs:range <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playedOn
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playedOn> rdf:type owl:ObjectProperty ,
+                                                                                 owl:FunctionalProperty ,
+                                                                                 owl:AsymmetricProperty ,
+                                                                                 owl:IrreflexiveProperty ;
+                                                                        rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults> ;
+                                                                        rdfs:range <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#takePartIn
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#takePartIn> rdf:type owl:ObjectProperty ,
+                                                                                   owl:AsymmetricProperty ,
+                                                                                   owl:TransitiveProperty ,
+                                                                                   owl:IrreflexiveProperty ;
+                                                                          rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Association> ,
+                                                                                      <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player> ;
+                                                                          rdfs:range <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Association> ,
+                                                                                     <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Battle> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#tankStatisticOf
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#tankStatisticOf> rdf:type owl:ObjectProperty ,
+                                                                                        owl:AsymmetricProperty ,
+                                                                                        owl:IrreflexiveProperty ;
+                                                                               rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> ;
+                                                                               rdfs:range <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#tankStatisticOn
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#tankStatisticOn> rdf:type owl:ObjectProperty ,
+                                                                                        owl:AsymmetricProperty ,
+                                                                                        owl:IrreflexiveProperty ;
+                                                                               rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> ;
+                                                                               rdfs:range <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#accountId
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#accountId> rdf:type owl:DatatypeProperty ;
+                                                                         rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerProperty> ;
+                                                                         rdf:type owl:FunctionalProperty ;
+                                                                         rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player> ;
+                                                                         rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#avgDamageAssisted
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#avgDamageAssisted> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties> ;
+                                                                                 rdf:type owl:FunctionalProperty ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> ;
+                                                                                 rdfs:range xsd:float ;
+                                                                                 rdfs:comment "Средний урон, нанесённый с вашей помощью. Значение считается с версии игры 8.8." .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#avgDamageAssistedRadio
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#avgDamageAssistedRadio> rdf:type owl:DatatypeProperty ;
+                                                                                      rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties> ;
+                                                                                      rdf:type owl:FunctionalProperty ;
+                                                                                      rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> ;
+                                                                                      rdfs:range xsd:float ;
+                                                                                      rdfs:comment "Средний урон по вашим разведданным. Значение считается с версии игры 8.8." .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#avgDamageAssistedTrack
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#avgDamageAssistedTrack> rdf:type owl:DatatypeProperty ;
+                                                                                      rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties> ;
+                                                                                      rdf:type owl:FunctionalProperty ;
+                                                                                      rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> ;
+                                                                                      rdfs:range xsd:float ;
+                                                                                      rdfs:comment "Средний урон после вашего попадания, сбившего гусеницу. Значение считается с версии игры 8.8." .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#avgDamageBlocked
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#avgDamageBlocked> rdf:type owl:DatatypeProperty ;
+                                                                                rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties> ;
+                                                                                rdf:type owl:FunctionalProperty ;
+                                                                                rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> ;
+                                                                                rdfs:range xsd:float ;
+                                                                                rdfs:comment "Средний заблокированный бронёй урон за бой. Заблокированный бронёй урон — это урон от снарядов (бронебойных, кумулятивных и подкалиберных), которые попали в танк, но не нанесли урона. Значение считается с версии игры 9.0." .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResDamage
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResDamage> rdf:type owl:DatatypeProperty ;
+                                                                            rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#battleResultsProperty> ;
+                                                                            rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults> ;
+                                                                            rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResFrags
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResFrags> rdf:type owl:DatatypeProperty ;
+                                                                           rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#battleResultsProperty> ;
+                                                                           rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults> ;
+                                                                           rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResPlayerClanTag
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResPlayerClanTag> rdf:type owl:DatatypeProperty ;
+                                                                                   rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#battleResultsProperty> ;
+                                                                                   rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults> ;
+                                                                                   rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResPlayerName
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResPlayerName> rdf:type owl:DatatypeProperty ;
+                                                                                rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#battleResultsProperty> ;
+                                                                                rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults> ;
+                                                                                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResTank
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResTank> rdf:type owl:DatatypeProperty ;
+                                                                          rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#battleResultsProperty> ;
+                                                                          rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults> ;
+                                                                          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResXp
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResXp> rdf:type owl:DatatypeProperty ;
+                                                                        rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#battleResultsProperty> ;
+                                                                        rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults> ;
+                                                                        rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#battleAvgXp
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#battleAvgXp> rdf:type owl:DatatypeProperty ;
+                                                                           rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties> ;
+                                                                           rdf:type owl:FunctionalProperty ;
+                                                                           rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> ;
+                                                                           rdfs:range xsd:int ;
+                                                                           rdfs:comment "Средний опыт за бой" .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#battleId
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#battleId> rdf:type owl:DatatypeProperty ;
+                                                                        rdfs:subPropertyOf owl:topDataProperty ;
+                                                                        rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Battle> ;
+                                                                        rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#battleResultsProperty
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#battleResultsProperty> rdf:type owl:DatatypeProperty ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#battles
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#battles> rdf:type owl:DatatypeProperty ;
+                                                                       rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties> ;
+                                                                       rdf:type owl:FunctionalProperty ;
+                                                                       rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> ;
+                                                                       rdfs:range xsd:int ;
+                                                                       rdfs:comment "Проведено боёв" .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#battlesOnStunningVehicles
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#battlesOnStunningVehicles> rdf:type owl:DatatypeProperty ;
+                                                                                         rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties> ;
+                                                                                         rdf:type owl:FunctionalProperty ;
+                                                                                         rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> ;
+                                                                                         rdfs:range xsd:int ;
+                                                                                         rdfs:comment "Количество боёв на технике, причиняющей оглушение" .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#capturePoints
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#capturePoints> rdf:type owl:DatatypeProperty ;
+                                                                             rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties> ;
+                                                                             rdf:type owl:FunctionalProperty ;
+                                                                             rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> ;
+                                                                             rdfs:range xsd:int ;
+                                                                             rdfs:comment "Очки захвата базы" .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#clanId
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#clanId> rdf:type owl:DatatypeProperty ;
+                                                                      rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#clanProperty> ;
+                                                                      rdf:type owl:FunctionalProperty ;
+                                                                      rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan> ,
+                                                                                  <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player> ;
+                                                                      rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#clanProperty
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#clanProperty> rdf:type owl:DatatypeProperty ;
+                                                                            rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankAccountId
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankAccountId> rdf:type owl:DatatypeProperty ;
+                                                                                     rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties> ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> ;
+                                                                                     rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankAvgDamageBlocked
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankAvgDamageBlocked> rdf:type owl:DatatypeProperty ;
+                                                                                            rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties> ;
+                                                                                            rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> ;
+                                                                                            rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankBattleAvgXp
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankBattleAvgXp> rdf:type owl:DatatypeProperty ;
+                                                                                       rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties> ;
+                                                                                       rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> ;
+                                                                                       rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankBattles
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankBattles> rdf:type owl:DatatypeProperty ;
+                                                                                   rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties> ;
+                                                                                   rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> ;
+                                                                                   rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankBattlesOnStunningVehicles
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankBattlesOnStunningVehicles> rdf:type owl:DatatypeProperty ;
+                                                                                                     rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties> ;
+                                                                                                     rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> ;
+                                                                                                     rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankCapturePoints
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankCapturePoints> rdf:type owl:DatatypeProperty ;
+                                                                                         rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties> ;
+                                                                                         rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> ;
+                                                                                         rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankDamageDealt
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankDamageDealt> rdf:type owl:DatatypeProperty ;
+                                                                                       rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties> ;
+                                                                                       rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> ;
+                                                                                       rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankDamageReceived
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankDamageReceived> rdf:type owl:DatatypeProperty ;
+                                                                                          rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties> ;
+                                                                                          rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> ;
+                                                                                          rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankDirectHitsReceived
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankDirectHitsReceived> rdf:type owl:DatatypeProperty ;
+                                                                                              rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties> ;
+                                                                                              rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> ;
+                                                                                              rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankDraws
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankDraws> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties> ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> ;
+                                                                                 rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankDroppedCapturePoints
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankDroppedCapturePoints> rdf:type owl:DatatypeProperty ;
+                                                                                                rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties> ;
+                                                                                                rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> ;
+                                                                                                rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankExplosionHits
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankExplosionHits> rdf:type owl:DatatypeProperty ;
+                                                                                         rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties> ;
+                                                                                         rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> ;
+                                                                                         rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankExplosionHitsReceived
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankExplosionHitsReceived> rdf:type owl:DatatypeProperty ;
+                                                                                                 rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties> ;
+                                                                                                 rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> ;
+                                                                                                 rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankFrags
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankFrags> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties> ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> ;
+                                                                                 rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankHits
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankHits> rdf:type owl:DatatypeProperty ;
+                                                                                rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties> ;
+                                                                                rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> ;
+                                                                                rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankHitsPercents
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankHitsPercents> rdf:type owl:DatatypeProperty ;
+                                                                                        rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties> ;
+                                                                                        rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> ;
+                                                                                        rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankLosses
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankLosses> rdf:type owl:DatatypeProperty ;
+                                                                                  rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties> ;
+                                                                                  rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> ;
+                                                                                  rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankMarkOfMastery
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankMarkOfMastery> rdf:type owl:DatatypeProperty ;
+                                                                                         rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties> ;
+                                                                                         rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> ;
+                                                                                         rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankMaxFrags
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankMaxFrags> rdf:type owl:DatatypeProperty ;
+                                                                                    rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties> ;
+                                                                                    rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> ;
+                                                                                    rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankMaxXp
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankMaxXp> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties> ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> ;
+                                                                                 rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankNoDamageDirectHitsReceived
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankNoDamageDirectHitsReceived> rdf:type owl:DatatypeProperty ;
+                                                                                                      rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties> ;
+                                                                                                      rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> ;
+                                                                                                      rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankPiercings
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankPiercings> rdf:type owl:DatatypeProperty ;
+                                                                                     rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties> ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> ;
+                                                                                     rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankPiercingsReceived
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankPiercingsReceived> rdf:type owl:DatatypeProperty ;
+                                                                                             rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties> ;
+                                                                                             rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> ;
+                                                                                             rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankShots
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankShots> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties> ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> ;
+                                                                                 rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankSpotted
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankSpotted> rdf:type owl:DatatypeProperty ;
+                                                                                   rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties> ;
+                                                                                   rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> ;
+                                                                                   rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties> rdf:type owl:DatatypeProperty ;
+                                                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                               rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStunAssistedDamage
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStunAssistedDamage> rdf:type owl:DatatypeProperty ;
+                                                                                              rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties> ;
+                                                                                              rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> ;
+                                                                                              rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStunNumber
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStunNumber> rdf:type owl:DatatypeProperty ;
+                                                                                      rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties> ;
+                                                                                      rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> ;
+                                                                                      rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankSurvivedBattles
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankSurvivedBattles> rdf:type owl:DatatypeProperty ;
+                                                                                           rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties> ;
+                                                                                           rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> ;
+                                                                                           rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankTankId
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankTankId> rdf:type owl:DatatypeProperty ;
+                                                                                  rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties> ;
+                                                                                  rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> ;
+                                                                                  rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankTankingFactor
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankTankingFactor> rdf:type owl:DatatypeProperty ;
+                                                                                         rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties> ;
+                                                                                         rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> ;
+                                                                                         rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankWins
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankWins> rdf:type owl:DatatypeProperty ;
+                                                                                rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties> ;
+                                                                                rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> ;
+                                                                                rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankXp
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankXp> rdf:type owl:DatatypeProperty ;
+                                                                              rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankStatisticProperties> ;
+                                                                              rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> ;
+                                                                              rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#creatorId
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#creatorId> rdf:type owl:DatatypeProperty ;
+                                                                         rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#clanProperty> ;
+                                                                         rdf:type owl:FunctionalProperty ;
+                                                                         rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan> ;
+                                                                         rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#creatorName
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#creatorName> rdf:type owl:DatatypeProperty ;
+                                                                           rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#clanProperty> ;
+                                                                           rdf:type owl:FunctionalProperty ;
+                                                                           rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan> ;
+                                                                           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#damageDealt
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#damageDealt> rdf:type owl:DatatypeProperty ;
+                                                                           rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties> ;
+                                                                           rdf:type owl:FunctionalProperty ;
+                                                                           rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> ;
+                                                                           rdfs:range xsd:int ;
+                                                                           rdfs:comment "Нанесено повреждений" .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#damageReceived
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#damageReceived> rdf:type owl:DatatypeProperty ;
+                                                                              rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties> ;
+                                                                              rdf:type owl:FunctionalProperty ;
+                                                                              rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> ;
+                                                                              rdfs:range xsd:int ;
+                                                                              rdfs:comment "Получено урона" .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#description
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#description> rdf:type owl:DatatypeProperty ;
+                                                                           rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#clanProperty> ;
+                                                                           rdf:type owl:FunctionalProperty ;
+                                                                           rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan> ;
+                                                                           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#directHitsReceived
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#directHitsReceived> rdf:type owl:DatatypeProperty ;
+                                                                                  rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties> ;
+                                                                                  rdf:type owl:FunctionalProperty ;
+                                                                                  rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> ;
+                                                                                  rdfs:range xsd:int ;
+                                                                                  rdfs:comment "Количество полученных прямых попаданий" .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#draws
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#draws> rdf:type owl:DatatypeProperty ;
+                                                                     rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties> ;
+                                                                     rdf:type owl:FunctionalProperty ;
+                                                                     rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> ;
+                                                                     rdfs:range xsd:int ;
+                                                                     rdfs:comment "Ничьи" .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#droppedCapturePoints
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#droppedCapturePoints> rdf:type owl:DatatypeProperty ;
+                                                                                    rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties> ;
+                                                                                    rdf:type owl:FunctionalProperty ;
+                                                                                    rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> ;
+                                                                                    rdfs:range xsd:int ;
+                                                                                    rdfs:comment "Очки защиты базы" .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#explosionHits
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#explosionHits> rdf:type owl:DatatypeProperty ;
+                                                                             rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties> ;
+                                                                             rdf:type owl:FunctionalProperty ;
+                                                                             rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> ;
+                                                                             rdfs:range xsd:int ;
+                                                                             rdfs:comment "Количество нанесённых осколочно-фугасных попаданий" .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#explosionHitsReceived
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#explosionHitsReceived> rdf:type owl:DatatypeProperty ;
+                                                                                     rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties> ;
+                                                                                     rdf:type owl:FunctionalProperty ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> ;
+                                                                                     rdfs:range xsd:int ;
+                                                                                     rdfs:comment "Количество полученных осколочно-фугасных попаданий" .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#frags
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#frags> rdf:type owl:DatatypeProperty ;
+                                                                     rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties> ;
+                                                                     rdf:type owl:FunctionalProperty ;
+                                                                     rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> ;
+                                                                     rdfs:range xsd:int ;
+                                                                     rdfs:comment "Уничтожено техники" .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#globalRating
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#globalRating> rdf:type owl:DatatypeProperty ;
+                                                                            rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties> ;
+                                                                            rdf:type owl:FunctionalProperty ;
+                                                                            rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> ;
+                                                                            rdfs:range xsd:int ;
+                                                                            rdfs:comment "Личный рейтинг" .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hits
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hits> rdf:type owl:DatatypeProperty ;
+                                                                    rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties> ;
+                                                                    rdf:type owl:FunctionalProperty ;
+                                                                    rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> ;
+                                                                    rdfs:range xsd:int ;
+                                                                    rdfs:comment "Попадания" .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hitsPercents
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hitsPercents> rdf:type owl:DatatypeProperty ;
+                                                                            rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties> ;
+                                                                            rdf:type owl:FunctionalProperty ;
+                                                                            rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> ;
+                                                                            rdfs:range xsd:int ;
+                                                                            rdfs:comment "Процент попаданий" .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#leaderId
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#leaderId> rdf:type owl:DatatypeProperty ;
+                                                                        rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#clanProperty> ;
+                                                                        rdf:type owl:FunctionalProperty ;
+                                                                        rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan> ;
+                                                                        rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#leaderName
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#leaderName> rdf:type owl:DatatypeProperty ;
+                                                                          rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#clanProperty> ;
+                                                                          rdf:type owl:FunctionalProperty ;
+                                                                          rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan> ;
+                                                                          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#losses
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#losses> rdf:type owl:DatatypeProperty ;
+                                                                      rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties> ;
+                                                                      rdf:type owl:FunctionalProperty ;
+                                                                      rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> ;
+                                                                      rdfs:range xsd:int ;
+                                                                      rdfs:comment "Поражения" .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#maxDamage
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#maxDamage> rdf:type owl:DatatypeProperty ;
+                                                                         rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties> ;
+                                                                         rdf:type owl:FunctionalProperty ;
+                                                                         rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> ;
+                                                                         rdfs:range xsd:int ;
+                                                                         rdfs:comment "Максимальный урон за бой" .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#maxFrags
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#maxFrags> rdf:type owl:DatatypeProperty ;
+                                                                        rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties> ;
+                                                                        rdf:type owl:FunctionalProperty ;
+                                                                        rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> ;
+                                                                        rdfs:range xsd:int ;
+                                                                        rdfs:comment "Максимум уничтожено за бой" .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#maxXp
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#maxXp> rdf:type owl:DatatypeProperty ;
+                                                                     rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties> ;
+                                                                     rdf:type owl:FunctionalProperty ;
+                                                                     rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> ;
+                                                                     rdfs:range xsd:int ;
+                                                                     rdfs:comment "Максимальный опыт за бой" .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#membersCount
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#membersCount> rdf:type owl:DatatypeProperty ;
+                                                                            rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#clanProperty> ;
+                                                                            rdf:type owl:FunctionalProperty ;
+                                                                            rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan> ;
+                                                                            rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#motto
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#motto> rdf:type owl:DatatypeProperty ;
+                                                                     rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#clanProperty> ;
+                                                                     rdf:type owl:FunctionalProperty ;
+                                                                     rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan> ;
+                                                                     rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#name
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#name> rdf:type owl:DatatypeProperty ;
+                                                                    rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#clanProperty> ;
+                                                                    rdf:type owl:FunctionalProperty ;
+                                                                    rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan> ;
+                                                                    rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#nickName
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#nickName> rdf:type owl:DatatypeProperty ;
+                                                                        rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerProperty> ;
+                                                                        rdf:type owl:FunctionalProperty ;
+                                                                        rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player> ;
+                                                                        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#noDamageDirectHitsReceived
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#noDamageDirectHitsReceived> rdf:type owl:DatatypeProperty ;
+                                                                                          rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties> ;
+                                                                                          rdf:type owl:FunctionalProperty ;
+                                                                                          rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> ;
+                                                                                          rdfs:range xsd:int ;
+                                                                                          rdfs:comment "Количество полученных прямых попаданий, не нанёсших урон" .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#oldName
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#oldName> rdf:type owl:DatatypeProperty ;
+                                                                       rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#clanProperty> ;
+                                                                       rdf:type owl:FunctionalProperty ;
+                                                                       rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan> ;
+                                                                       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#piercings
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#piercings> rdf:type owl:DatatypeProperty ;
+                                                                         rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties> ;
+                                                                         rdf:type owl:FunctionalProperty ;
+                                                                         rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> ;
+                                                                         rdfs:range xsd:int ;
+                                                                         rdfs:comment "Количество пробитий" .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#piercingsReceived
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#piercingsReceived> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties> ;
+                                                                                 rdf:type owl:FunctionalProperty ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> ;
+                                                                                 rdfs:range xsd:int ;
+                                                                                 rdfs:comment "Количество полученных пробитий" .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerProperty
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerProperty> rdf:type owl:DatatypeProperty ;
+                                                                              rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties> rdf:type owl:DatatypeProperty ,
+                                                                                                  owl:FunctionalProperty ;
+                                                                                         rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#rapidModeProperties
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#rapidModeProperties> rdf:type owl:DatatypeProperty ;
+                                                                                   rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                   rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#RapidMode> ;
+                                                                                   owl:propertyDisjointWith <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeModeProperties> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#rapidSpeedBackward
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#rapidSpeedBackward> rdf:type owl:DatatypeProperty ;
+                                                                                  rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#rapidModeProperties> ;
+                                                                                  rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#RapidMode> ;
+                                                                                  rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#rapidSpeedForward
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#rapidSpeedForward> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#rapidModeProperties> ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#RapidMode> ;
+                                                                                 rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#rapidSuspensionSteeringLockAngle
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#rapidSuspensionSteeringLockAngle> rdf:type owl:DatatypeProperty ;
+                                                                                                rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#rapidModeProperties> ;
+                                                                                                rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#RapidMode> ;
+                                                                                                rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#rapidSwitchOffTime
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#rapidSwitchOffTime> rdf:type owl:DatatypeProperty ;
+                                                                                  rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#rapidModeProperties> ;
+                                                                                  rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#RapidMode> ;
+                                                                                  rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#rapidSwitchOnTime
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#rapidSwitchOnTime> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#rapidModeProperties> ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#RapidMode> ;
+                                                                                 rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#shots
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#shots> rdf:type owl:DatatypeProperty ;
+                                                                     rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties> ;
+                                                                     rdf:type owl:FunctionalProperty ;
+                                                                     rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> ;
+                                                                     rdfs:range xsd:int ;
+                                                                     rdfs:comment "Произведено выстрелов" .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeDispersion
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeDispersion> rdf:type owl:DatatypeProperty ;
+                                                                               rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeModeProperties> ;
+                                                                               rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SiegeMode> ;
+                                                                               rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeModeProperties
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeModeProperties> rdf:type owl:DatatypeProperty ;
+                                                                                   rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                   rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SiegeMode> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeMoveDownArc
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeMoveDownArc> rdf:type owl:DatatypeProperty ;
+                                                                                rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeModeProperties> ;
+                                                                                rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SiegeMode> ;
+                                                                                rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeMoveUpArc
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeMoveUpArc> rdf:type owl:DatatypeProperty ;
+                                                                              rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeModeProperties> ;
+                                                                              rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SiegeMode> ;
+                                                                              rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeReloadTime
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeReloadTime> rdf:type owl:DatatypeProperty ;
+                                                                               rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeModeProperties> ;
+                                                                               rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SiegeMode> ;
+                                                                               rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeSpeedBackward
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeSpeedBackward> rdf:type owl:DatatypeProperty ;
+                                                                                  rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeModeProperties> ;
+                                                                                  rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SiegeMode> ;
+                                                                                  rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeSuspensionTraverseSpeed
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeSuspensionTraverseSpeed> rdf:type owl:DatatypeProperty ;
+                                                                                            rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeModeProperties> ;
+                                                                                            rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SiegeMode> ;
+                                                                                            rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeSwitchOffTime
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeSwitchOffTime> rdf:type owl:DatatypeProperty ;
+                                                                                  rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeModeProperties> ;
+                                                                                  rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SiegeMode> ;
+                                                                                  rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeSwitchOnTime
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeSwitchOnTime> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeModeProperties> ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SiegeMode> ;
+                                                                                 rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#spotted
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#spotted> rdf:type owl:DatatypeProperty ;
+                                                                       rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties> ;
+                                                                       rdf:type owl:FunctionalProperty ;
+                                                                       rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> ;
+                                                                       rdfs:range xsd:int ;
+                                                                       rdfs:comment "Обнаружено противников" .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#stunNumber
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#stunNumber> rdf:type owl:DatatypeProperty ;
+                                                                          rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties> ;
+                                                                          rdf:type owl:FunctionalProperty ;
+                                                                          rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> ;
+                                                                          rdfs:range xsd:int ;
+                                                                          rdfs:comment "Количество оглушений, причинённых экипажу противника" .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#survivedBattles
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#survivedBattles> rdf:type owl:DatatypeProperty ;
+                                                                               rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties> ;
+                                                                               rdf:type owl:FunctionalProperty ;
+                                                                               rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> ;
+                                                                               rdfs:range xsd:float ;
+                                                                               rdfs:comment "Выжил в боях" .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#tag
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#tag> rdf:type owl:DatatypeProperty ;
+                                                                   rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#clanProperty> ;
+                                                                   rdf:type owl:FunctionalProperty ;
+                                                                   rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan> ;
+                                                                   rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#tankingFactor
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#tankingFactor> rdf:type owl:DatatypeProperty ;
+                                                                             rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties> ;
+                                                                             rdf:type owl:FunctionalProperty ;
+                                                                             rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> ;
+                                                                             rdfs:range xsd:float ;
+                                                                             rdfs:comment "Отношение заблокированного бронёй урона к полученному игроком урону от бронебойных, кумулятивных, подкалиберных снарядов. Значение считается с версии игры 9.0." .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#treesCut
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#treesCut> rdf:type owl:DatatypeProperty ;
+                                                                        rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties> ;
+                                                                        rdf:type owl:FunctionalProperty ;
+                                                                        rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> ;
+                                                                        rdfs:range xsd:int ;
+                                                                        rdfs:comment "Количество поваленных деревьев" .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleArmorHullFront
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleArmorHullFront> rdf:type owl:DatatypeProperty ;
+                                                                                      rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty> ;
+                                                                                      rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                                      rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleArmorHullRear
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleArmorHullRear> rdf:type owl:DatatypeProperty ;
+                                                                                     rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty> ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                                     rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleArmorHullSides
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleArmorHullSides> rdf:type owl:DatatypeProperty ;
+                                                                                      rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty> ;
+                                                                                      rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                                      rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleArmorTurretFront
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleArmorTurretFront> rdf:type owl:DatatypeProperty ;
+                                                                                        rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty> ;
+                                                                                        rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                                        rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleArmorTurretRear
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleArmorTurretRear> rdf:type owl:DatatypeProperty ;
+                                                                                       rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty> ;
+                                                                                       rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                                       rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleArmorTurretSides
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleArmorTurretSides> rdf:type owl:DatatypeProperty ;
+                                                                                        rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty> ;
+                                                                                        rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                                        rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleDescription
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleDescription> rdf:type owl:DatatypeProperty ;
+                                                                                   rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty> ;
+                                                                                   rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                                   rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleFireChance
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleFireChance> rdf:type owl:DatatypeProperty ;
+                                                                                  rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty> ;
+                                                                                  rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                                  rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleGunAimTime
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleGunAimTime> rdf:type owl:DatatypeProperty ;
+                                                                                  rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty> ;
+                                                                                  rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                                  rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleGunCaliber
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleGunCaliber> rdf:type owl:DatatypeProperty ;
+                                                                                  rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty> ;
+                                                                                  rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                                  rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleGunDispersion
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleGunDispersion> rdf:type owl:DatatypeProperty ;
+                                                                                     rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty> ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                                     rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleGunFireRate
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleGunFireRate> rdf:type owl:DatatypeProperty ;
+                                                                                   rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty> ;
+                                                                                   rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                                   rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleGunMoveDownArc
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleGunMoveDownArc> rdf:type owl:DatatypeProperty ;
+                                                                                      rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty> ;
+                                                                                      rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                                      rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleGunMoveUpArc
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleGunMoveUpArc> rdf:type owl:DatatypeProperty ;
+                                                                                    rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty> ;
+                                                                                    rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                                    rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleGunReloadTime
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleGunReloadTime> rdf:type owl:DatatypeProperty ;
+                                                                                     rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty> ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                                     rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleGunTraverseSpeed
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleGunTraverseSpeed> rdf:type owl:DatatypeProperty ;
+                                                                                        rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty> ;
+                                                                                        rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                                        rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleHp
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleHp> rdf:type owl:DatatypeProperty ;
+                                                                          rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty> ;
+                                                                          rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                          rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleIsWheeled
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleIsWheeled> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty> ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                                 rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleModulesEngineId
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleModulesEngineId> rdf:type owl:DatatypeProperty ;
+                                                                                       rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty> ;
+                                                                                       rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                                       rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleModulesGunId
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleModulesGunId> rdf:type owl:DatatypeProperty ;
+                                                                                    rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty> ;
+                                                                                    rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                                    rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleModulesRadioId
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleModulesRadioId> rdf:type owl:DatatypeProperty ;
+                                                                                      rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty> ;
+                                                                                      rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                                      rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleModulesSuspensionId
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleModulesSuspensionId> rdf:type owl:DatatypeProperty ;
+                                                                                           rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty> ;
+                                                                                           rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                                           rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleModulesTurretId
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleModulesTurretId> rdf:type owl:DatatypeProperty ;
+                                                                                       rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty> ;
+                                                                                       rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                                       rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleName
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleName> rdf:type owl:DatatypeProperty ;
+                                                                            rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty> ;
+                                                                            rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechiclePower
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechiclePower> rdf:type owl:DatatypeProperty ;
+                                                                             rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty> ;
+                                                                             rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                             rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty> rdf:type owl:DatatypeProperty ;
+                                                                                rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                rdf:type owl:FunctionalProperty ;
+                                                                                rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleShortName
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleShortName> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty> ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleSpeedBackward
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleSpeedBackward> rdf:type owl:DatatypeProperty ;
+                                                                                     rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty> ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                                     rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleSpeedForward
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleSpeedForward> rdf:type owl:DatatypeProperty ;
+                                                                                    rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty> ;
+                                                                                    rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                                    rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleTag
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleTag> rdf:type owl:DatatypeProperty ;
+                                                                           rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty> ;
+                                                                           rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleTankId
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleTankId> rdf:type owl:DatatypeProperty ;
+                                                                              rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty> ;
+                                                                              rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                              rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleTier
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleTier> rdf:type owl:DatatypeProperty ;
+                                                                            rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty> ;
+                                                                            rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                            rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleTurretTraverseSpeed
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleTurretTraverseSpeed> rdf:type owl:DatatypeProperty ;
+                                                                                           rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty> ;
+                                                                                           rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                                           rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleViewRange
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleViewRange> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#vechicleProperty> ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> ;
+                                                                                 rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#wins
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#wins> rdf:type owl:DatatypeProperty ;
+                                                                    rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties> ;
+                                                                    rdf:type owl:FunctionalProperty ;
+                                                                    rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> ;
+                                                                    rdfs:range xsd:int ;
+                                                                    rdfs:comment "Победы" .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#xp
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#xp> rdf:type owl:DatatypeProperty ;
+                                                                  rdfs:subPropertyOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties> ;
+                                                                  rdf:type owl:FunctionalProperty ;
+                                                                  rdfs:domain <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> ;
+                                                                  rdfs:range xsd:int ;
+                                                                  rdfs:comment "Суммарный опыт" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Association
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Association> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Battle
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Battle> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf owl:Thing ,
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasTeam> ;
+                                                                                        owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                                                        owl:onClass <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Team>
+                                                                                      ] .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Clan> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Association> ,
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasMember> ;
+                                                                                      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                      owl:onClass <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player>
+                                                                                    ] ;
+                                                                    owl:disjointWith <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Platoon> ,
+                                                                                     <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Team> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#ClanMember
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#ClanMember> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Member> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Member
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Member> rdf:type owl:Class ;
+                                                                      owl:equivalentClass [ owl:intersectionOf ( <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player>
+                                                                                                                 [ rdf:type owl:Class ;
+                                                                                                                   owl:unionOf ( <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#ClanMember>
+                                                                                                                                 <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlatoonMember>
+                                                                                                                                 <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TeamMember>
+                                                                                                                               )
+                                                                                                                 ]
+                                                                                                               ) ;
+                                                                                            rdf:type owl:Class
+                                                                                          ] .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation> rdf:type owl:Class ;
+                                                                      owl:equivalentClass [ owl:intersectionOf ( owl:Thing
+                                                                                                                 [ rdf:type owl:Class ;
+                                                                                                                   owl:oneOf ( <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#china>
+                                                                                                                               <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#czech>
+                                                                                                                               <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#france>
+                                                                                                                               <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#germany>
+                                                                                                                               <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#italy>
+                                                                                                                               <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#japan>
+                                                                                                                               <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#poland>
+                                                                                                                               <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#sweden>
+                                                                                                                               <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#uk>
+                                                                                                                               <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#usa>
+                                                                                                                               <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#ussr>
+                                                                                                                             )
+                                                                                                                 ]
+                                                                                                               ) ;
+                                                                                            rdf:type owl:Class
+                                                                                          ] .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Platoon
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Platoon> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Association> ,
+                                                                                       [ rdf:type owl:Restriction ;
+                                                                                         owl:onProperty <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasMember> ;
+                                                                                         owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                                                         owl:onClass <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player>
+                                                                                       ] ;
+                                                                       owl:disjointWith <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Team> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlatoonMember
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlatoonMember> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Member> .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#RapidMode
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#RapidMode> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SiegeMode
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SiegeMode> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TankType
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TankType> rdf:type owl:Class ;
+                                                                        owl:equivalentClass [ owl:intersectionOf ( owl:Thing
+                                                                                                                   [ rdf:type owl:Class ;
+                                                                                                                     owl:oneOf ( <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#AT-SPG>
+                                                                                                                                 <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SPG>
+                                                                                                                                 <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#heavyTank>
+                                                                                                                                 <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#lightTank>
+                                                                                                                                 <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#mediumTank>
+                                                                                                                               )
+                                                                                                                   ]
+                                                                                                                 ) ;
+                                                                                              rdf:type owl:Class
+                                                                                            ] .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Team
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Team> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Association> ,
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasMember> ;
+                                                                                      owl:qualifiedCardinality "15"^^xsd:nonNegativeInteger ;
+                                                                                      owl:onClass <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player>
+                                                                                    ] .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TeamMember
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TeamMember> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Member> .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#AT-SPG
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#AT-SPG> rdf:type owl:NamedIndividual ,
+                                                                               <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TankType> ,
+                                                                               owl:Thing .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SPG
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SPG> rdf:type owl:NamedIndividual ,
+                                                                            <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TankType> ,
+                                                                            owl:Thing .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#china
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#china> rdf:type owl:NamedIndividual ,
+                                                                              <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation> ,
+                                                                              owl:Thing .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#czech
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#czech> rdf:type owl:NamedIndividual ,
+                                                                              <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation> ,
+                                                                              owl:Thing .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#france
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#france> rdf:type owl:NamedIndividual ,
+                                                                               <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation> ,
+                                                                               owl:Thing .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#germany
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#germany> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation> ,
+                                                                                owl:Thing .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#heavyTank
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#heavyTank> rdf:type owl:NamedIndividual ,
+                                                                                  <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TankType> ,
+                                                                                  owl:Thing .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#italy
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#italy> rdf:type owl:NamedIndividual ,
+                                                                              <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation> ,
+                                                                              owl:Thing .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#japan
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#japan> rdf:type owl:NamedIndividual ,
+                                                                              <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation> ,
+                                                                              owl:Thing .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#lightTank
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#lightTank> rdf:type owl:NamedIndividual ,
+                                                                                  <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TankType> ,
+                                                                                  owl:Thing .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#mediumTank
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#mediumTank> rdf:type owl:NamedIndividual ,
+                                                                                   <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TankType> ,
+                                                                                   owl:Thing .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#poland
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#poland> rdf:type owl:NamedIndividual ,
+                                                                               <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation> ,
+                                                                               owl:Thing .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#sweden
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#sweden> rdf:type owl:NamedIndividual ,
+                                                                               <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation> ,
+                                                                               owl:Thing .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#uk
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#uk> rdf:type owl:NamedIndividual ,
+                                                                           <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation> ,
+                                                                           owl:Thing .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#usa
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#usa> rdf:type owl:NamedIndividual ,
+                                                                            <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation> ,
+                                                                            owl:Thing .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#ussr
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#ussr> rdf:type owl:NamedIndividual ,
+                                                                             <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation> ,
+                                                                             owl:Thing .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Association>
+                <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Battle>
+                <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults>
+                <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation>
+                <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player>
+                <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic>
+                <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatisticOnConcreteTank>
+                <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#RapidMode>
+                <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SiegeMode>
+                <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Tank>
+                <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#TankType>
+              )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#AT-SPG>
+                        <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SPG>
+                        <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#heavyTank>
+                        <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#lightTank>
+                        <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#mediumTank>
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#china>
+                        <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#czech>
+                        <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#france>
+                        <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#germany>
+                        <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#italy>
+                        <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#japan>
+                        <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#poland>
+                        <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#sweden>
+                        <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#uk>
+                        <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#usa>
+                        <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#ussr>
+                      )
+] .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
