@@ -329,6 +329,9 @@
       "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankLosses",
       "@type" : "http://www.w3.org/2001/XMLSchema#int"
     },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
     "hasTeam" : {
       "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#hasTeam",
       "@type" : "@id"
@@ -472,6 +475,9 @@
       "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#rapidSuspensionSteeringLockAngle",
       "@type" : "http://www.w3.org/2001/XMLSchema#int"
     },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
     "tankStatisticOf" : {
       "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#tankStatisticOf",
       "@type" : "@id"
@@ -491,6 +497,9 @@
     "concreteTankPiercingsReceived" : {
       "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#concreteTankPiercingsReceived",
       "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/elements/1.1/publisher"
     },
     "motto" : {
       "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#motto",
