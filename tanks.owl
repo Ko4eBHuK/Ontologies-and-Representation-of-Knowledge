@@ -7,7 +7,9 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:tanks="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks"/>
+    <owl:Ontology rdf:about="urn:absolute:okladnikov.tanks">
+        <rdfs:label xml:lang="en">&quot;Tanks ontology&quot;</rdfs:label>
+    </owl:Ontology>
     
 
 
