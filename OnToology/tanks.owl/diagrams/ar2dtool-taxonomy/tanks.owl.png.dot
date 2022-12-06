@@ -1,0 +1,13 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:TeamMember" "base:Clan" "base:Platoon" "base:Team" "base:PlatoonMember" "base:Member" "base:ClanMember" "base:Battle" "base:Association" ; /*classes style*/
+	"base:TeamMember" -> "base:Member" [ label = "rdfs:subClassOf" ];
+	"base:Clan" -> "base:Association" [ label = "rdfs:subClassOf" ];
+	"base:ClanMember" -> "base:Member" [ label = "rdfs:subClassOf" ];
+	"base:Platoon" -> "base:Association" [ label = "rdfs:subClassOf" ];
+	"base:Team" -> "base:Association" [ label = "rdfs:subClassOf" ];
+	"base:Battle" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"base:PlatoonMember" -> "base:Member" [ label = "rdfs:subClassOf" ];
+
+}
