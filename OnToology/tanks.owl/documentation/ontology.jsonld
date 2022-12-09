@@ -209,8 +209,42 @@
     } ]
   } ]
 }, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@language" : "en",
+    "@value" : "Okladnikov Constantine"
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "en",
+    "@value" : "Ontology describes domain model of \"Mir tankov\" computer game"
+  }, {
+    "@language" : "ru",
+    "@value" : "Отнология Tanks (Танки) описывает доменную модель игры \"Мир танков\""
+  } ],
+  "http://purl.org/dc/elements/1.1/publisher" : [ {
+    "@language" : "en",
+    "@value" : "Okladnikov Constantine"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "en",
+    "@value" : "Tanks"
+  }, {
+    "@language" : "ru",
+    "@value" : "Танки"
+  } ]
 }, {
   "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#AT-SPG",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Thing" ],
@@ -409,6 +443,18 @@
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResFrags",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#battleResultsProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResPlatoonNumber",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults"
@@ -1962,7 +2008,7 @@
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#takePartIn",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Association"
   }, {
@@ -2473,5 +2519,14 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#playerStatisticProperties"
+  } ]
+}, {
+  "@id" : "urn:absolute:okladnikov.tanks#battleStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Battle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 } ]
