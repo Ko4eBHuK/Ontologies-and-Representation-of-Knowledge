@@ -475,6 +475,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResPlatoonNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResPlatoonNumber">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#battleResultsProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResPlayerClanTag -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResPlayerClanTag">
@@ -1869,16 +1879,6 @@
     
 
 
-    <!-- urn:absolute:okladnikov.tanks#batResPlatoonNumber -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResPlatoonNumber">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#battleResultsProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- urn:absolute:okladnikov.tanks#battleStatus -->
 
     <owl:DatatypeProperty rdf:about="urn:absolute:okladnikov.tanks#battleStatus">
@@ -2259,18 +2259,6 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation"/>
     </owl:Thing>
-    
-
-
-    <!-- urn:absolute:okladnikov.tanks#Победа -->
-
-    <owl:NamedIndividual rdf:about="urn:absolute:okladnikov.tanks#Победа"/>
-    
-
-
-    <!-- urn:absolute:okladnikov.tanks#Поражение -->
-
-    <owl:NamedIndividual rdf:about="urn:absolute:okladnikov.tanks#Поражение"/>
     
 
 
