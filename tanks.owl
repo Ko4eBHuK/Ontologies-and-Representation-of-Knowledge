@@ -1869,6 +1869,15 @@
     
 
 
+    <!-- urn:absolute:okladnikov.tanks#battleStatus -->
+
+    <owl:DatatypeProperty rdf:about="urn:absolute:okladnikov.tanks#battleStatus">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Battle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -2240,6 +2249,18 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Nation"/>
     </owl:Thing>
+    
+
+
+    <!-- urn:absolute:okladnikov.tanks#Победа -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:okladnikov.tanks#Победа"/>
+    
+
+
+    <!-- urn:absolute:okladnikov.tanks#Поражение -->
+
+    <owl:NamedIndividual rdf:about="urn:absolute:okladnikov.tanks#Поражение"/>
     
 
 
