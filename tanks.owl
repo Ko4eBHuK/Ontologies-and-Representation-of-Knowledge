@@ -8,7 +8,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:tanks="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks">
-    <owl:Ontology rdf:about="urn:absolute:okladnikov.tanks">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks">
         <dc:creator xml:lang="en">Okladnikov Constantine</dc:creator>
         <dc:description xml:lang="en">Ontology describes domain model of &quot;Mir tankov&quot; computer game</dc:description>
         <dc:description xml:lang="ru">Отнология Tanks (Танки) описывает доменную модель игры &quot;Мир танков&quot;</dc:description>
@@ -1871,7 +1871,7 @@
 
     <!-- urn:absolute:okladnikov.tanks#batResPlatoonNumber -->
 
-    <owl:DatatypeProperty rdf:about="urn:absolute:okladnikov.tanks#batResPlatoonNumber">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResPlatoonNumber">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#battleResultsProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
