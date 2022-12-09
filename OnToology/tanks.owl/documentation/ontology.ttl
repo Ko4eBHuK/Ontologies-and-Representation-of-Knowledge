@@ -6,7 +6,33 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#> .
 
-<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks> rdf:type owl:Ontology .
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks> rdf:type owl:Ontology ;
+                                                                <http://purl.org/dc/elements/1.1/creator> "Okladnikov Constantine"@en ;
+                                                                <http://purl.org/dc/elements/1.1/description> "Ontology describes domain model of \"Mir tankov\" computer game"@en ,
+                                                                                                              "Отнология Tanks (Танки) описывает доменную модель игры \"Мир танков\""@ru ;
+                                                                <http://purl.org/dc/elements/1.1/publisher> "Okladnikov Constantine"@en ;
+                                                                <http://purl.org/dc/elements/1.1/title> "Tanks"@en ,
+                                                                                                        "Танки"@ru .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
 
 #################################################################
 #    Object Properties
@@ -228,7 +254,6 @@
 ###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#takePartIn
 :takePartIn rdf:type owl:ObjectProperty ,
                      owl:AsymmetricProperty ,
-                     owl:TransitiveProperty ,
                      owl:IrreflexiveProperty ;
             rdfs:domain :Association ,
                         :Player ;
@@ -312,6 +337,13 @@
              rdfs:subPropertyOf :battleResultsProperty ;
              rdfs:domain :BattleResults ;
              rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResPlatoonNumber
+:batResPlatoonNumber rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :battleResultsProperty ;
+                     rdfs:domain :BattleResults ;
+                     rdfs:range xsd:int .
 
 
 ###  http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResPlayerClanTag
@@ -1307,6 +1339,12 @@
     rdfs:domain :PlayerStatistic ;
     rdfs:range xsd:int ;
     rdfs:comment "Суммарный опыт" .
+
+
+###  urn:absolute:okladnikov.tanks#battleStatus
+<urn:absolute:okladnikov.tanks#battleStatus> rdf:type owl:DatatypeProperty ;
+                                             rdfs:domain :Battle ;
+                                             rdfs:range xsd:string .
 
 
 #################################################################
