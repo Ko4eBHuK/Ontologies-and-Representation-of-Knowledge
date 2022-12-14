@@ -1,4 +1,4 @@
-https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbdb9e779cca01397b&tier=10&fields=is_wheeled%2Ctag%2Ctank_id%2Ctype%2Cdescription%2Cshort_name%2Cnation%2Ctier%2Cname%2Cdefault_profile.hp%2Cdefault_profile.speed_forward%2Cdefault_profile.speed_backward%2Cdefault_profile.engine%2Cdefault_profile.ammo%2Cdefault_profile.modules%2Cdefault_profile.gun%2Cdefault_profile.turret%2Cdefault_profile.armor%2Cdefault_profile.rapid%2Cdefault_profile.siege
+https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbdb9e779cca01397b&tier=10&fields=is_wheeled%2Ctag%2Ctank_id%2Ctype%2Cdescription%2Cshort_name%2Cnation%2Ctier%2Cname%2Cdefault_profile.hp%2Cdefault_profile.speed_forward%2Cdefault_profile.speed_backward%2Cdefault_profile.engine%2Cdefault_profile.modules%2Cdefault_profile.gun%2Cdefault_profile.turret%2Cdefault_profile.armor%2Cdefault_profile.rapid%2Cdefault_profile.siege
 {
   "status": "ok",
   "meta": {
@@ -62,50 +62,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 60,
         "speed_backward": 20,
-        "ammo": [
-          {
-            "penetration": [
-              186,
-              248,
-              310
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              240,
-              320,
-              400
-            ]
-          },
-          {
-            "penetration": [
-              233,
-              310,
-              388
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              240,
-              320,
-              400
-            ]
-          },
-          {
-            "penetration": [
-              38,
-              50,
-              63
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              315,
-              420,
-              525
-            ]
-          }
-        ],
         "turret": {
           "name": "TVP T 50/51",
           "weight": 9000,
@@ -176,50 +132,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 45,
         "speed_backward": 12,
-        "ammo": [
-          {
-            "penetration": [
-              189,
-              252,
-              315
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              330,
-              440,
-              550
-            ]
-          },
-          {
-            "penetration": [
-              225,
-              300,
-              375
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              330,
-              440,
-              550
-            ]
-          },
-          {
-            "penetration": [
-              45,
-              60,
-              75
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              398,
-              530,
-              663
-            ]
-          }
-        ],
         "turret": {
           "name": "Kranvagn",
           "weight": 15000,
@@ -290,50 +202,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 65,
         "speed_backward": 23,
-        "ammo": [
-          {
-            "penetration": [
-              201,
-              268,
-              335
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              270,
-              360,
-              450
-            ]
-          },
-          {
-            "penetration": [
-              248,
-              330,
-              413
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              270,
-              360,
-              450
-            ]
-          },
-          {
-            "penetration": [
-              79,
-              105,
-              131
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              330,
-              440,
-              550
-            ]
-          }
-        ],
         "turret": {
           "name": "Progetto M40 mod. 65",
           "weight": 9000,
@@ -404,50 +272,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 50,
         "speed_backward": 15,
-        "ammo": [
-          {
-            "penetration": [
-              195,
-              260,
-              325
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              368,
-              490,
-              613
-            ]
-          },
-          {
-            "penetration": [
-              230,
-              306,
-              383
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              368,
-              490,
-              613
-            ]
-          },
-          {
-            "penetration": [
-              51,
-              68,
-              85
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              480,
-              640,
-              800
-            ]
-          }
-        ],
         "turret": {
           "name": "TNH T vz. 55",
           "weight": 11805,
@@ -518,50 +342,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 40,
         "speed_backward": 12,
-        "ammo": [
-          {
-            "penetration": [
-              201,
-              268,
-              335
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              368,
-              490,
-              613
-            ]
-          },
-          {
-            "penetration": [
-              244,
-              325,
-              406
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              368,
-              490,
-              613
-            ]
-          },
-          {
-            "penetration": [
-              95,
-              127,
-              159
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              480,
-              640,
-              800
-            ]
-          }
-        ],
         "turret": {
           "name": "Rinoceronte",
           "weight": 9000,
@@ -632,50 +412,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 35,
         "speed_backward": 14,
-        "ammo": [
-          {
-            "penetration": [
-              188,
-              250,
-              313
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              563,
-              750,
-              938
-            ]
-          },
-          {
-            "penetration": [
-              238,
-              317,
-              396
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              563,
-              750,
-              938
-            ]
-          },
-          {
-            "penetration": [
-              68,
-              90,
-              113
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              713,
-              950,
-              1188
-            ]
-          }
-        ],
         "turret": {
           "name": "60TP Lewandowskiego",
           "weight": 14000,
@@ -746,50 +482,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 65,
         "speed_backward": 23,
-        "ammo": [
-          {
-            "penetration": [
-              128,
-              170,
-              213
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              180,
-              240,
-              300
-            ]
-          },
-          {
-            "penetration": [
-              186,
-              248,
-              310
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              180,
-              240,
-              300
-            ]
-          },
-          {
-            "penetration": [
-              34,
-              45,
-              56
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              240,
-              320,
-              400
-            ]
-          }
-        ],
         "turret": {
           "name": "Batignolles-Châtillon 25 t",
           "weight": 5700,
@@ -870,50 +562,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 50,
         "speed_backward": 25,
-        "ammo": [
-          {
-            "penetration": [
-              194,
-              258,
-              323
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              270,
-              360,
-              450
-            ]
-          },
-          {
-            "penetration": [
-              248,
-              330,
-              413
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              270,
-              360,
-              450
-            ]
-          },
-          {
-            "penetration": [
-              40,
-              53,
-              66
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              330,
-              440,
-              550
-            ]
-          }
-        ],
         "turret": {
           "name": "STB-1",
           "weight": 9000,
@@ -984,50 +632,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 25,
         "speed_backward": 15,
-        "ammo": [
-          {
-            "penetration": [
-              56,
-              75,
-              94
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              675,
-              900,
-              1125
-            ]
-          },
-          {
-            "penetration": [
-              144,
-              192,
-              240
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              675,
-              900,
-              1125
-            ]
-          },
-          {
-            "penetration": [
-              189,
-              252,
-              315
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              510,
-              680,
-              850
-            ]
-          }
-        ],
         "turret": {
           "name": "Type 5 Heavy",
           "weight": 36000,
@@ -1098,50 +702,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 56,
         "speed_backward": 20,
-        "ammo": [
-          {
-            "penetration": [
-              197,
-              262,
-              328
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              330,
-              440,
-              550
-            ]
-          },
-          {
-            "penetration": [
-              255,
-              340,
-              425
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              330,
-              440,
-              550
-            ]
-          },
-          {
-            "penetration": [
-              51,
-              68,
-              85
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              398,
-              530,
-              663
-            ]
-          }
-        ],
         "turret": {
           "name": "121",
           "weight": 10000,
@@ -1218,50 +778,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 50,
         "speed_backward": 45,
-        "ammo": [
-          {
-            "penetration": [
-              231,
-              308,
-              385
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              293,
-              390,
-              488
-            ]
-          },
-          {
-            "penetration": [
-              263,
-              350,
-              438
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              293,
-              390,
-              488
-            ]
-          },
-          {
-            "penetration": [
-              40,
-              53,
-              66
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              360,
-              480,
-              600
-            ]
-          }
-        ],
         "turret": {
           "name": "Strv 103B",
           "weight": 100,
@@ -1342,50 +858,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 55,
         "speed_backward": 15,
-        "ammo": [
-          {
-            "penetration": [
-              194,
-              258,
-              323
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              293,
-              390,
-              488
-            ]
-          },
-          {
-            "penetration": [
-              236,
-              315,
-              394
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              293,
-              390,
-              488
-            ]
-          },
-          {
-            "penetration": [
-              40,
-              53,
-              66
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              383,
-              510,
-              638
-            ]
-          }
-        ],
         "turret": {
           "name": "CS 63",
           "weight": 10000,
@@ -1456,50 +928,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 30,
         "speed_backward": 12,
-        "ammo": [
-          {
-            "penetration": [
-              199,
-              265,
-              331
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              398,
-              530,
-              663
-            ]
-          },
-          {
-            "penetration": [
-              248,
-              330,
-              413
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              398,
-              530,
-              663
-            ]
-          },
-          {
-            "penetration": [
-              98,
-              130,
-              163
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              525,
-              700,
-              875
-            ]
-          }
-        ],
         "turret": {
           "name": "CC 3",
           "weight": 16000,
@@ -1570,50 +998,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 50,
         "speed_backward": 15,
-        "ammo": [
-          {
-            "penetration": [
-              187,
-              249,
-              311
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              330,
-              440,
-              550
-            ]
-          },
-          {
-            "penetration": [
-              255,
-              340,
-              425
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              330,
-              440,
-              550
-            ]
-          },
-          {
-            "penetration": [
-              51,
-              68,
-              85
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              398,
-              530,
-              663
-            ]
-          }
-        ],
         "turret": {
           "name": "113",
           "weight": 12000,
@@ -1694,50 +1078,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 50,
         "speed_backward": 24,
-        "ammo": [
-          {
-            "penetration": [
-              191,
-              254,
-              318
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              330,
-              440,
-              550
-            ]
-          },
-          {
-            "penetration": [
-              233,
-              310,
-              388
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              330,
-              440,
-              550
-            ]
-          },
-          {
-            "penetration": [
-              45,
-              60,
-              75
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              398,
-              530,
-              663
-            ]
-          }
-        ],
         "turret": {
           "name": "UDES 15/16",
           "weight": 9605,
@@ -1808,50 +1148,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 65,
         "speed_backward": 23,
-        "ammo": [
-          {
-            "penetration": [
-              185,
-              246,
-              308
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              293,
-              390,
-              488
-            ]
-          },
-          {
-            "penetration": [
-              210,
-              280,
-              350
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              293,
-              390,
-              488
-            ]
-          },
-          {
-            "penetration": [
-              40,
-              53,
-              66
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              360,
-              480,
-              600
-            ]
-          }
-        ],
         "turret": {
           "name": "WZ-132-1",
           "weight": 9000,
@@ -1922,50 +1218,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 43,
         "speed_backward": 14,
-        "ammo": [
-          {
-            "penetration": [
-              163,
-              217,
-              271
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              293,
-              390,
-              488
-            ]
-          },
-          {
-            "penetration": [
-              203,
-              270,
-              338
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              293,
-              390,
-              488
-            ]
-          },
-          {
-            "penetration": [
-              46,
-              61,
-              76
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              398,
-              530,
-              663
-            ]
-          }
-        ],
         "turret": {
           "name": "ИС-4М",
           "weight": 14200,
@@ -2036,50 +1288,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 50,
         "speed_backward": 15,
-        "ammo": [
-          {
-            "penetration": [
-              188,
-              250,
-              313
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              368,
-              490,
-              613
-            ]
-          },
-          {
-            "penetration": [
-              255,
-              340,
-              425
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              368,
-              490,
-              613
-            ]
-          },
-          {
-            "penetration": [
-              49,
-              65,
-              81
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              480,
-              640,
-              800
-            ]
-          }
-        ],
         "turret": {
           "name": "WZ-111 model 5A",
           "weight": 15000,
@@ -2150,50 +1358,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 65,
         "speed_backward": 20,
-        "ammo": [
-          {
-            "penetration": [
-              193,
-              257,
-              321
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              300,
-              400,
-              500
-            ]
-          },
-          {
-            "penetration": [
-              244,
-              325,
-              406
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              300,
-              400,
-              500
-            ]
-          },
-          {
-            "penetration": [
-              49,
-              65,
-              81
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              386,
-              515,
-              644
-            ]
-          }
-        ],
         "turret": {
           "name": "AMX 50 B",
           "weight": 17500,
@@ -2264,50 +1428,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 34,
         "speed_backward": 12,
-        "ammo": [
-          {
-            "penetration": [
-              194,
-              259,
-              324
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              300,
-              400,
-              500
-            ]
-          },
-          {
-            "penetration": [
-              245,
-              326,
-              408
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              300,
-              400,
-              500
-            ]
-          },
-          {
-            "penetration": [
-              90,
-              120,
-              150
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              386,
-              515,
-              644
-            ]
-          }
-        ],
         "turret": {
           "name": "FV215",
           "weight": 16500,
@@ -2378,50 +1498,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 20,
         "speed_backward": 15,
-        "ammo": [
-          {
-            "penetration": [
-              185,
-              246,
-              308
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              368,
-              490,
-              613
-            ]
-          },
-          {
-            "penetration": [
-              233,
-              311,
-              389
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              368,
-              490,
-              613
-            ]
-          },
-          {
-            "penetration": [
-              49,
-              65,
-              81
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              473,
-              630,
-              788
-            ]
-          }
-        ],
         "turret": {
           "name": "Maus",
           "weight": 58000,
@@ -2492,50 +1568,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 60,
         "speed_backward": 15,
-        "ammo": [
-          {
-            "penetration": [
-              188,
-              250,
-              313
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              368,
-              490,
-              613
-            ]
-          },
-          {
-            "penetration": [
-              227,
-              303,
-              379
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              368,
-              490,
-              613
-            ]
-          },
-          {
-            "penetration": [
-              51,
-              68,
-              85
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              480,
-              640,
-              800
-            ]
-          }
-        ],
         "turret": {
           "name": "ИС-7",
           "weight": 14200,
@@ -2606,50 +1638,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 53,
         "speed_backward": 20,
-        "ammo": [
-          {
-            "penetration": [
-              201,
-              268,
-              335
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              293,
-              390,
-              488
-            ]
-          },
-          {
-            "penetration": [
-              248,
-              330,
-              413
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              293,
-              390,
-              488
-            ]
-          },
-          {
-            "penetration": [
-              79,
-              105,
-              131
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              360,
-              480,
-              600
-            ]
-          }
-        ],
         "turret": {
           "name": "Centurion Action X",
           "weight": 14000,
@@ -2716,65 +1704,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 32,
         "speed_backward": 10,
-        "ammo": [
-          {
-            "penetration": [
-              45,
-              60,
-              75
-            ],
-            "stun": {
-              "duration": [
-                14.0,
-                35.0
-              ]
-            },
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              825,
-              1100,
-              1375
-            ]
-          },
-          {
-            "penetration": [
-              56,
-              75,
-              94
-            ],
-            "stun": {
-              "duration": [
-                0.0,
-                0.0
-              ]
-            },
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              1065,
-              1420,
-              1775
-            ]
-          },
-          {
-            "penetration": [
-              279,
-              372,
-              465
-            ],
-            "stun": {
-              "duration": [
-                0.0,
-                0.0
-              ]
-            },
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              563,
-              750,
-              938
-            ]
-          }
-        ],
         "turret": {
           "name": "T92 HMC",
           "weight": 300,
@@ -2841,50 +1770,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 38,
         "speed_backward": 16,
-        "ammo": [
-          {
-            "penetration": [
-              218,
-              290,
-              363
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              563,
-              750,
-              938
-            ]
-          },
-          {
-            "penetration": [
-              296,
-              395,
-              494
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              563,
-              750,
-              938
-            ]
-          },
-          {
-            "penetration": [
-              68,
-              90,
-              113
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              825,
-              1100,
-              1375
-            ]
-          }
-        ],
         "turret": {
           "name": "WZ-113G FT",
           "weight": 100,
@@ -2951,65 +1836,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 50,
         "speed_backward": 12,
-        "ammo": [
-          {
-            "penetration": [
-              34,
-              45,
-              56
-            ],
-            "stun": {
-              "duration": [
-                11.6,
-                29.0
-              ]
-            },
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              600,
-              800,
-              1000
-            ]
-          },
-          {
-            "penetration": [
-              42,
-              56,
-              70
-            ],
-            "stun": {
-              "duration": [
-                0.0,
-                0.0
-              ]
-            },
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              750,
-              1000,
-              1250
-            ]
-          },
-          {
-            "penetration": [
-              251,
-              334,
-              418
-            ],
-            "stun": {
-              "duration": [
-                0.0,
-                0.0
-              ]
-            },
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              390,
-              520,
-              650
-            ]
-          }
-        ],
         "turret": {
           "name": "Объект 261",
           "weight": 170,
@@ -3076,65 +1902,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 40,
         "speed_backward": 10,
-        "ammo": [
-          {
-            "penetration": [
-              40,
-              53,
-              66
-            ],
-            "stun": {
-              "duration": [
-                12.4,
-                31.0
-              ]
-            },
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              675,
-              900,
-              1125
-            ]
-          },
-          {
-            "penetration": [
-              50,
-              66,
-              83
-            ],
-            "stun": {
-              "duration": [
-                0.0,
-                0.0
-              ]
-            },
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              900,
-              1200,
-              1500
-            ]
-          },
-          {
-            "penetration": [
-              279,
-              372,
-              465
-            ],
-            "stun": {
-              "duration": [
-                0.0,
-                0.0
-              ]
-            },
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              480,
-              640,
-              800
-            ]
-          }
-        ],
         "turret": {
           "name": "G.W. E 100",
           "weight": 100,
@@ -3205,50 +1972,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 34,
         "speed_backward": 12,
-        "ammo": [
-          {
-            "penetration": [
-              233,
-              310,
-              388
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              863,
-              1150,
-              1438
-            ]
-          },
-          {
-            "penetration": [
-              173,
-              230,
-              288
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              1313,
-              1750,
-              2188
-            ]
-          },
-          {
-            "penetration": [
-              69,
-              92,
-              115
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              1313,
-              1750,
-              2188
-            ]
-          }
-        ],
         "turret": {
           "name": "FV215b",
           "weight": 17000,
@@ -3319,50 +2042,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 30,
         "speed_backward": 15,
-        "ammo": [
-          {
-            "penetration": [
-              185,
-              246,
-              308
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              398,
-              530,
-              663
-            ]
-          },
-          {
-            "penetration": [
-              233,
-              311,
-              389
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              398,
-              530,
-              663
-            ]
-          },
-          {
-            "penetration": [
-              49,
-              65,
-              81
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              503,
-              670,
-              838
-            ]
-          }
-        ],
         "turret": {
           "name": "E 100",
           "weight": 58000,
@@ -3433,50 +2112,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 37,
         "speed_backward": 12,
-        "ammo": [
-          {
-            "penetration": [
-              194,
-              258,
-              323
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              300,
-              400,
-              500
-            ]
-          },
-          {
-            "penetration": [
-              255,
-              340,
-              425
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              300,
-              400,
-              500
-            ]
-          },
-          {
-            "penetration": [
-              45,
-              60,
-              75
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              386,
-              515,
-              644
-            ]
-          }
-        ],
         "turret": {
           "name": "T53",
           "weight": 11000,
@@ -3543,65 +2178,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 62,
         "speed_backward": 14,
-        "ammo": [
-          {
-            "penetration": [
-              36,
-              48,
-              60
-            ],
-            "stun": {
-              "duration": [
-                12.15,
-                27.0
-              ]
-            },
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              510,
-              680,
-              850
-            ]
-          },
-          {
-            "penetration": [
-              45,
-              60,
-              75
-            ],
-            "stun": {
-              "duration": [
-                0.0,
-                0.0
-              ]
-            },
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              623,
-              830,
-              1038
-            ]
-          },
-          {
-            "penetration": [
-              233,
-              310,
-              388
-            ],
-            "stun": {
-              "duration": [
-                0.0,
-                0.0
-              ]
-            },
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              345,
-              460,
-              575
-            ]
-          }
-        ],
         "turret": {
           "name": "Batignolles-Châtillon 155 mle. 58",
           "weight": 8000,
@@ -3668,50 +2244,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 30,
         "speed_backward": 12,
-        "ammo": [
-          {
-            "penetration": [
-              224,
-              299,
-              374
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              788,
-              1050,
-              1313
-            ]
-          },
-          {
-            "penetration": [
-              315,
-              420,
-              525
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              788,
-              1050,
-              1313
-            ]
-          },
-          {
-            "penetration": [
-              64,
-              85,
-              106
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              1050,
-              1400,
-              1750
-            ]
-          }
-        ],
         "turret": {
           "name": "Jagdpanzer E 100",
           "weight": 50,
@@ -3782,50 +2314,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 60,
         "speed_backward": 20,
-        "ammo": [
-          {
-            "penetration": [
-              203,
-              270,
-              338
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              293,
-              390,
-              488
-            ]
-          },
-          {
-            "penetration": [
-              248,
-              330,
-              413
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              293,
-              390,
-              488
-            ]
-          },
-          {
-            "penetration": [
-              45,
-              60,
-              75
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              383,
-              510,
-              638
-            ]
-          }
-        ],
         "turret": {
           "name": "E 50 Ausf. M",
           "weight": 14100,
@@ -3892,65 +2380,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 34,
         "speed_backward": 10,
-        "ammo": [
-          {
-            "penetration": [
-              44,
-              59,
-              74
-            ],
-            "stun": {
-              "duration": [
-                13.2,
-                33.0
-              ]
-            },
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              750,
-              1000,
-              1250
-            ]
-          },
-          {
-            "penetration": [
-              56,
-              74,
-              93
-            ],
-            "stun": {
-              "duration": [
-                0.0,
-                0.0
-              ]
-            },
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              1013,
-              1350,
-              1688
-            ]
-          },
-          {
-            "penetration": [
-              278,
-              370,
-              463
-            ],
-            "stun": {
-              "duration": [
-                0.0,
-                0.0
-              ]
-            },
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              540,
-              720,
-              900
-            ]
-          }
-        ],
         "turret": {
           "name": "Conqueror Gun Carriage",
           "weight": 100,
@@ -4021,50 +2450,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 35,
         "speed_backward": 10,
-        "ammo": [
-          {
-            "penetration": [
-              221,
-              295,
-              369
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              563,
-              750,
-              938
-            ]
-          },
-          {
-            "penetration": [
-              281,
-              375,
-              469
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              563,
-              750,
-              938
-            ]
-          },
-          {
-            "penetration": [
-              68,
-              90,
-              113
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              825,
-              1100,
-              1375
-            ]
-          }
-        ],
         "turret": {
           "name": "T110E4",
           "weight": 20000,
@@ -4131,50 +2516,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 48,
         "speed_backward": 15,
-        "ammo": [
-          {
-            "penetration": [
-              227,
-              303,
-              379
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              563,
-              750,
-              938
-            ]
-          },
-          {
-            "penetration": [
-              296,
-              395,
-              494
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              563,
-              750,
-              938
-            ]
-          },
-          {
-            "penetration": [
-              68,
-              90,
-              113
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              825,
-              1100,
-              1375
-            ]
-          }
-        ],
         "turret": {
           "name": "Объект 268",
           "weight": 170,
@@ -4245,50 +2586,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 50,
         "speed_backward": 20,
-        "ammo": [
-          {
-            "penetration": [
-              198,
-              264,
-              330
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              240,
-              320,
-              400
-            ]
-          },
-          {
-            "penetration": [
-              248,
-              330,
-              413
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              240,
-              320,
-              400
-            ]
-          },
-          {
-            "penetration": [
-              38,
-              50,
-              63
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              315,
-              420,
-              525
-            ]
-          }
-        ],
         "turret": {
           "name": "Т-62А",
           "weight": 8000,
@@ -4355,50 +2652,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 24,
         "speed_backward": 8,
-        "ammo": [
-          {
-            "penetration": [
-              221,
-              295,
-              369
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              563,
-              750,
-              938
-            ]
-          },
-          {
-            "penetration": [
-              281,
-              375,
-              469
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              563,
-              750,
-              938
-            ]
-          },
-          {
-            "penetration": [
-              68,
-              90,
-              113
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              825,
-              1100,
-              1375
-            ]
-          }
-        ],
         "turret": {
           "name": "T110E3",
           "weight": 1700,
@@ -4465,50 +2718,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 50,
         "speed_backward": 13,
-        "ammo": [
-          {
-            "penetration": [
-              220,
-              293,
-              366
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              563,
-              750,
-              938
-            ]
-          },
-          {
-            "penetration": [
-              296,
-              395,
-              494
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              563,
-              750,
-              938
-            ]
-          },
-          {
-            "penetration": [
-              68,
-              90,
-              113
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              825,
-              1100,
-              1375
-            ]
-          }
-        ],
         "turret": {
           "name": "AMX 50 Foch (155)",
           "weight": 170,
@@ -4579,50 +2788,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 32,
         "speed_backward": 8,
-        "ammo": [
-          {
-            "penetration": [
-              233,
-              310,
-              388
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              863,
-              1150,
-              1438
-            ]
-          },
-          {
-            "penetration": [
-              173,
-              230,
-              288
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              1313,
-              1750,
-              2188
-            ]
-          },
-          {
-            "penetration": [
-              69,
-              92,
-              115
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              1313,
-              1750,
-              2188
-            ]
-          }
-        ],
         "turret": {
           "name": "FV4005 Stage II",
           "weight": 4500,
@@ -4693,50 +2858,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 45,
         "speed_backward": 20,
-        "ammo": [
-          {
-            "penetration": [
-              201,
-              268,
-              335
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              293,
-              390,
-              488
-            ]
-          },
-          {
-            "penetration": [
-              248,
-              330,
-              413
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              293,
-              390,
-              488
-            ]
-          },
-          {
-            "penetration": [
-              40,
-              53,
-              66
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              360,
-              480,
-              600
-            ]
-          }
-        ],
         "turret": {
           "name": "M48A5 Patton",
           "weight": 8200,
@@ -4807,50 +2928,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 70,
         "speed_backward": 23,
-        "ammo": [
-          {
-            "penetration": [
-              209,
-              278,
-              348
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              315,
-              420,
-              525
-            ]
-          },
-          {
-            "penetration": [
-              242,
-              323,
-              404
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              315,
-              420,
-              525
-            ]
-          },
-          {
-            "penetration": [
-              79,
-              105,
-              131
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              383,
-              510,
-              638
-            ]
-          }
-        ],
         "turret": {
           "name": "Leopard 1",
           "weight": 7718,
@@ -4921,50 +2998,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 35,
         "speed_backward": 12,
-        "ammo": [
-          {
-            "penetration": [
-              194,
-              258,
-              323
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              300,
-              400,
-              500
-            ]
-          },
-          {
-            "penetration": [
-              255,
-              340,
-              425
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              300,
-              400,
-              500
-            ]
-          },
-          {
-            "penetration": [
-              45,
-              60,
-              75
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              386,
-              515,
-              644
-            ]
-          }
-        ],
         "turret": {
           "name": "T169",
           "weight": 14500,
@@ -5035,50 +3068,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 65,
         "speed_backward": 23,
-        "ammo": [
-          {
-            "penetration": [
-              186,
-              248,
-              310
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              293,
-              390,
-              488
-            ]
-          },
-          {
-            "penetration": [
-              225,
-              300,
-              375
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              293,
-              390,
-              488
-            ]
-          },
-          {
-            "penetration": [
-              40,
-              53,
-              66
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              360,
-              480,
-              600
-            ]
-          }
-        ],
         "turret": {
           "name": "AMX 30 B",
           "weight": 7000,
@@ -5149,50 +3138,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 55,
         "speed_backward": 20,
-        "ammo": [
-          {
-            "penetration": [
-              198,
-              264,
-              330
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              240,
-              320,
-              400
-            ]
-          },
-          {
-            "penetration": [
-              248,
-              330,
-              413
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              240,
-              320,
-              400
-            ]
-          },
-          {
-            "penetration": [
-              38,
-              50,
-              63
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              315,
-              420,
-              525
-            ]
-          }
-        ],
         "turret": {
           "name": "Объект 907",
           "weight": 8000,
@@ -5263,50 +3208,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 34,
         "speed_backward": 12,
-        "ammo": [
-          {
-            "penetration": [
-              194,
-              259,
-              324
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              300,
-              400,
-              500
-            ]
-          },
-          {
-            "penetration": [
-              245,
-              326,
-              408
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              300,
-              400,
-              500
-            ]
-          },
-          {
-            "penetration": [
-              90,
-              120,
-              150
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              386,
-              515,
-              644
-            ]
-          }
-        ],
         "turret": {
           "name": "Conqueror «Unorthodox» ABP",
           "weight": 15800,
@@ -5377,50 +3278,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 60,
         "speed_backward": 23,
-        "ammo": [
-          {
-            "penetration": [
-              201,
-              268,
-              335
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              293,
-              390,
-              488
-            ]
-          },
-          {
-            "penetration": [
-              263,
-              350,
-              438
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              293,
-              390,
-              488
-            ]
-          },
-          {
-            "penetration": [
-              40,
-              53,
-              66
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              360,
-              480,
-              600
-            ]
-          }
-        ],
         "turret": {
           "name": "M60",
           "weight": 8400,
@@ -5487,50 +3344,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 30,
         "speed_backward": 12,
-        "ammo": [
-          {
-            "penetration": [
-              204,
-              272,
-              340
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              360,
-              480,
-              600
-            ]
-          },
-          {
-            "penetration": [
-              240,
-              320,
-              400
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              360,
-              480,
-              600
-            ]
-          },
-          {
-            "penetration": [
-              98,
-              130,
-              163
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              465,
-              620,
-              775
-            ]
-          }
-        ],
         "turret": {
           "name": "FV217 Badger",
           "weight": 100,
@@ -5601,50 +3414,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 55,
         "speed_backward": 20,
-        "ammo": [
-          {
-            "penetration": [
-              198,
-              264,
-              330
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              240,
-              320,
-              400
-            ]
-          },
-          {
-            "penetration": [
-              248,
-              330,
-              413
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              240,
-              320,
-              400
-            ]
-          },
-          {
-            "penetration": [
-              38,
-              50,
-              63
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              315,
-              420,
-              525
-            ]
-          }
-        ],
         "turret": {
           "name": "Объект 140",
           "weight": 8200,
@@ -5715,50 +3484,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 40,
         "speed_backward": 15,
-        "ammo": [
-          {
-            "penetration": [
-              185,
-              246,
-              308
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              368,
-              490,
-              613
-            ]
-          },
-          {
-            "penetration": [
-              233,
-              311,
-              389
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              368,
-              490,
-              613
-            ]
-          },
-          {
-            "penetration": [
-              49,
-              65,
-              81
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              473,
-              630,
-              788
-            ]
-          }
-        ],
         "turret": {
           "name": "Waffenträger auf E 100",
           "weight": 10000,
@@ -5829,50 +3554,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 35,
         "speed_backward": 15,
-        "ammo": [
-          {
-            "penetration": [
-              203,
-              270,
-              338
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              300,
-              400,
-              500
-            ]
-          },
-          {
-            "penetration": [
-              236,
-              315,
-              394
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              300,
-              400,
-              500
-            ]
-          },
-          {
-            "penetration": [
-              49,
-              65,
-              81
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              386,
-              515,
-              644
-            ]
-          }
-        ],
         "turret": {
           "name": "AMX M4 mle. 54 TCB 120",
           "weight": 18500,
@@ -5943,50 +3624,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 68,
         "speed_backward": 22,
-        "ammo": [
-          {
-            "penetration": [
-              176,
-              234,
-              293
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              293,
-              390,
-              488
-            ]
-          },
-          {
-            "penetration": [
-              210,
-              280,
-              350
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              293,
-              390,
-              488
-            ]
-          },
-          {
-            "penetration": [
-              40,
-              53,
-              66
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              360,
-              480,
-              600
-            ]
-          }
-        ],
         "turret": {
           "name": "AMX 13 105",
           "weight": 2800,
@@ -6053,50 +3690,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 50,
         "speed_backward": 13,
-        "ammo": [
-          {
-            "penetration": [
-              193,
-              257,
-              321
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              300,
-              400,
-              500
-            ]
-          },
-          {
-            "penetration": [
-              244,
-              325,
-              406
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              300,
-              400,
-              500
-            ]
-          },
-          {
-            "penetration": [
-              49,
-              65,
-              81
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              386,
-              515,
-              644
-            ]
-          }
-        ],
         "turret": {
           "name": "AMX 50 Foch B",
           "weight": 170,
@@ -6173,50 +3766,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 70,
         "speed_backward": 50,
-        "ammo": [
-          {
-            "penetration": [
-              143,
-              190,
-              238
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              293,
-              390,
-              488
-            ]
-          },
-          {
-            "penetration": [
-              180,
-              240,
-              300
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              293,
-              390,
-              488
-            ]
-          },
-          {
-            "penetration": [
-              56,
-              75,
-              94
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              375,
-              500,
-              625
-            ]
-          }
-        ],
         "turret": {
           "name": "Panhard EBR 105",
           "weight": 4000,
@@ -6287,50 +3836,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 72,
         "speed_backward": 25,
-        "ammo": [
-          {
-            "penetration": [
-              173,
-              230,
-              288
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              225,
-              300,
-              375
-            ]
-          },
-          {
-            "penetration": [
-              186,
-              248,
-              310
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              225,
-              300,
-              375
-            ]
-          },
-          {
-            "penetration": [
-              38,
-              50,
-              63
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              270,
-              360,
-              450
-            ]
-          }
-        ],
         "turret": {
           "name": "Т-100 ЛТ (Изделие 64992)",
           "weight": 3000,
@@ -6397,50 +3902,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 60,
         "speed_backward": 15,
-        "ammo": [
-          {
-            "penetration": [
-              209,
-              279,
-              349
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              563,
-              750,
-              938
-            ]
-          },
-          {
-            "penetration": [
-              251,
-              334,
-              418
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              563,
-              750,
-              938
-            ]
-          },
-          {
-            "penetration": [
-              56,
-              75,
-              94
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              713,
-              950,
-              1188
-            ]
-          }
-        ],
         "turret": {
           "name": "Grille 15",
           "weight": 3000,
@@ -6511,50 +3972,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 33,
         "speed_backward": 15,
-        "ammo": [
-          {
-            "penetration": [
-              194,
-              258,
-              323
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              420,
-              560,
-              700
-            ]
-          },
-          {
-            "penetration": [
-              236,
-              315,
-              394
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              420,
-              560,
-              700
-            ]
-          },
-          {
-            "penetration": [
-              49,
-              65,
-              81
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              525,
-              700,
-              875
-            ]
-          }
-        ],
         "turret": {
           "name": "Pz.Kpfw. VII",
           "weight": 40000,
@@ -6625,50 +4042,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 65,
         "speed_backward": 22,
-        "ammo": [
-          {
-            "penetration": [
-              177,
-              236,
-              295
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              293,
-              390,
-              488
-            ]
-          },
-          {
-            "penetration": [
-              210,
-              280,
-              350
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              293,
-              390,
-              488
-            ]
-          },
-          {
-            "penetration": [
-              40,
-              53,
-              66
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              360,
-              480,
-              600
-            ]
-          }
-        ],
         "turret": {
           "name": "AR/AAV XM551 Sheridan",
           "weight": 4000,
@@ -6739,50 +4112,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 50,
         "speed_backward": 18,
-        "ammo": [
-          {
-            "penetration": [
-              189,
-              252,
-              315
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              330,
-              440,
-              550
-            ]
-          },
-          {
-            "penetration": [
-              255,
-              340,
-              425
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              330,
-              440,
-              550
-            ]
-          },
-          {
-            "penetration": [
-              51,
-              68,
-              85
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              398,
-              530,
-              663
-            ]
-          }
-        ],
         "turret": {
           "name": "Объект 430У",
           "weight": 10000,
@@ -6853,50 +4182,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 75,
         "speed_backward": 25,
-        "ammo": [
-          {
-            "penetration": [
-              182,
-              242,
-              303
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              240,
-              320,
-              400
-            ]
-          },
-          {
-            "penetration": [
-              210,
-              280,
-              350
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              240,
-              320,
-              400
-            ]
-          },
-          {
-            "penetration": [
-              90,
-              120,
-              150
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              315,
-              420,
-              525
-            ]
-          }
-        ],
         "turret": {
           "name": "Rheinmetall Panzerwagen",
           "weight": 4500,
@@ -6963,50 +4248,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 50,
         "speed_backward": 18,
-        "ammo": [
-          {
-            "penetration": [
-              220,
-              293,
-              366
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              488,
-              650,
-              813
-            ]
-          },
-          {
-            "penetration": [
-              270,
-              360,
-              450
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              488,
-              650,
-              813
-            ]
-          },
-          {
-            "penetration": [
-              68,
-              90,
-              113
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              630,
-              840,
-              1050
-            ]
-          }
-        ],
         "turret": {
           "name": "Объект 268 Вариант 4",
           "weight": 100,
@@ -7077,50 +4318,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 40,
         "speed_backward": 15,
-        "ammo": [
-          {
-            "penetration": [
-              192,
-              256,
-              320
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              488,
-              650,
-              813
-            ]
-          },
-          {
-            "penetration": [
-              238,
-              317,
-              396
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              488,
-              650,
-              813
-            ]
-          },
-          {
-            "penetration": [
-              68,
-              90,
-              113
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              630,
-              840,
-              1050
-            ]
-          }
-        ],
         "turret": {
           "name": "Объект 705А",
           "weight": 18000,
@@ -7191,50 +4388,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 40,
         "speed_backward": 15,
-        "ammo": [
-          {
-            "penetration": [
-              201,
-              268,
-              335
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              270,
-              360,
-              450
-            ]
-          },
-          {
-            "penetration": [
-              236,
-              315,
-              394
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              270,
-              360,
-              450
-            ]
-          },
-          {
-            "penetration": [
-              40,
-              53,
-              66
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              330,
-              440,
-              550
-            ]
-          }
-        ],
         "turret": {
           "name": "M-V-Y JJ",
           "weight": 10000,
@@ -7305,50 +4458,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 55,
         "speed_backward": 20,
-        "ammo": [
-          {
-            "penetration": [
-              207,
-              276,
-              345
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              240,
-              320,
-              400
-            ]
-          },
-          {
-            "penetration": [
-              248,
-              330,
-              413
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              240,
-              320,
-              400
-            ]
-          },
-          {
-            "penetration": [
-              38,
-              50,
-              63
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              315,
-              420,
-              525
-            ]
-          }
-        ],
         "turret": {
           "name": "К-91",
           "weight": 9000,
@@ -7419,50 +4528,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 55,
         "speed_backward": 15,
-        "ammo": [
-          {
-            "penetration": [
-              199,
-              265,
-              331
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              368,
-              490,
-              613
-            ]
-          },
-          {
-            "penetration": [
-              255,
-              340,
-              425
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              368,
-              490,
-              613
-            ]
-          },
-          {
-            "penetration": [
-              49,
-              65,
-              81
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              480,
-              640,
-              800
-            ]
-          }
-        ],
         "turret": {
           "name": "Объект 277",
           "weight": 12000,
@@ -7543,50 +4608,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 40,
         "speed_backward": 13,
-        "ammo": [
-          {
-            "penetration": [
-              194,
-              258,
-              323
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              330,
-              440,
-              550
-            ]
-          },
-          {
-            "penetration": [
-              233,
-              310,
-              388
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              330,
-              440,
-              550
-            ]
-          },
-          {
-            "penetration": [
-              51,
-              68,
-              85
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              398,
-              530,
-              663
-            ]
-          }
-        ],
         "turret": {
           "name": "СТ-II",
           "weight": 17200,
@@ -7657,50 +4678,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 45,
         "speed_backward": 15,
-        "ammo": [
-          {
-            "penetration": [
-              200,
-              267,
-              334
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              398,
-              530,
-              663
-            ]
-          },
-          {
-            "penetration": [
-              233,
-              311,
-              389
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              398,
-              530,
-              663
-            ]
-          },
-          {
-            "penetration": [
-              49,
-              65,
-              81
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              480,
-              640,
-              800
-            ]
-          }
-        ],
         "turret": {
           "name": "Объект 780",
           "weight": 13000,
@@ -7771,50 +4748,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 55,
         "speed_backward": 20,
-        "ammo": [
-          {
-            "penetration": [
-              198,
-              264,
-              330
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              240,
-              320,
-              400
-            ]
-          },
-          {
-            "penetration": [
-              248,
-              330,
-              413
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              240,
-              320,
-              400
-            ]
-          },
-          {
-            "penetration": [
-              38,
-              50,
-              63
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              315,
-              420,
-              525
-            ]
-          }
-        ],
         "turret": {
           "name": "Объект 140",
           "weight": 8200,
@@ -7885,50 +4818,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 37,
         "speed_backward": 12,
-        "ammo": [
-          {
-            "penetration": [
-              194,
-              258,
-              323
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              300,
-              400,
-              500
-            ]
-          },
-          {
-            "penetration": [
-              255,
-              340,
-              425
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              300,
-              400,
-              500
-            ]
-          },
-          {
-            "penetration": [
-              45,
-              60,
-              75
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              386,
-              515,
-              644
-            ]
-          }
-        ],
         "turret": {
           "name": "T53",
           "weight": 11000,
@@ -7999,50 +4888,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 40,
         "speed_backward": 13,
-        "ammo": [
-          {
-            "penetration": [
-              194,
-              258,
-              323
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              330,
-              440,
-              550
-            ]
-          },
-          {
-            "penetration": [
-              255,
-              340,
-              425
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              330,
-              440,
-              550
-            ]
-          },
-          {
-            "penetration": [
-              51,
-              68,
-              85
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              398,
-              530,
-              663
-            ]
-          }
-        ],
         "turret": {
           "name": "Объект 279 ранний (726)",
           "weight": 13000,
@@ -8113,50 +4958,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 48,
         "speed_backward": 15,
-        "ammo": [
-          {
-            "penetration": [
-              227,
-              303,
-              379
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              563,
-              750,
-              938
-            ]
-          },
-          {
-            "penetration": [
-              296,
-              395,
-              494
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              563,
-              750,
-              938
-            ]
-          },
-          {
-            "penetration": [
-              68,
-              90,
-              113
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              825,
-              1100,
-              1375
-            ]
-          }
-        ],
         "turret": {
           "name": "Объект 268 Вариант 5",
           "weight": 8000,
@@ -8227,50 +5028,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 55,
         "speed_backward": 23,
-        "ammo": [
-          {
-            "penetration": [
-              186,
-              248,
-              310
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              300,
-              400,
-              500
-            ]
-          },
-          {
-            "penetration": [
-              240,
-              320,
-              400
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              300,
-              400,
-              500
-            ]
-          },
-          {
-            "penetration": [
-              45,
-              60,
-              75
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              386,
-              515,
-              644
-            ]
-          }
-        ],
         "turret": {
           "name": "Carro mod. 67",
           "weight": 12000,
@@ -8341,50 +5098,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 50,
         "speed_backward": 15,
-        "ammo": [
-          {
-            "penetration": [
-              195,
-              260,
-              325
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              368,
-              490,
-              613
-            ]
-          },
-          {
-            "penetration": [
-              230,
-              306,
-              383
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              368,
-              490,
-              613
-            ]
-          },
-          {
-            "penetration": [
-              51,
-              68,
-              85
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              480,
-              640,
-              800
-            ]
-          }
-        ],
         "turret": {
           "name": "Vz. 55 GW",
           "weight": 11805,
@@ -8455,50 +5168,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 56,
         "speed_backward": 20,
-        "ammo": [
-          {
-            "penetration": [
-              194,
-              258,
-              323
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              300,
-              400,
-              500
-            ]
-          },
-          {
-            "penetration": [
-              255,
-              340,
-              425
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              300,
-              400,
-              500
-            ]
-          },
-          {
-            "penetration": [
-              45,
-              60,
-              75
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              386,
-              515,
-              644
-            ]
-          }
-        ],
         "turret": {
           "name": "T95E6",
           "weight": 9500,
@@ -8569,50 +5238,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 46,
         "speed_backward": 15,
-        "ammo": [
-          {
-            "penetration": [
-              203,
-              270,
-              338
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              330,
-              440,
-              550
-            ]
-          },
-          {
-            "penetration": [
-              242,
-              322,
-              403
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              330,
-              440,
-              550
-            ]
-          },
-          {
-            "penetration": [
-              105,
-              140,
-              175
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              398,
-              530,
-              663
-            ]
-          }
-        ],
         "turret": {
           "name": "T95/FV4201 Chieftain prototype",
           "weight": 18000,
@@ -8683,50 +5308,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 60,
         "speed_backward": 15,
-        "ammo": [
-          {
-            "penetration": [
-              195,
-              260,
-              325
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              330,
-              440,
-              550
-            ]
-          },
-          {
-            "penetration": [
-              255,
-              340,
-              425
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              330,
-              440,
-              550
-            ]
-          },
-          {
-            "penetration": [
-              51,
-              68,
-              85
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              398,
-              530,
-              663
-            ]
-          }
-        ],
         "turret": {
           "name": "Объект 260 обр. 1945 г.",
           "weight": 13000,
@@ -8797,50 +5378,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 33,
         "speed_backward": 15,
-        "ammo": [
-          {
-            "penetration": [
-              185,
-              246,
-              308
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              563,
-              750,
-              938
-            ]
-          },
-          {
-            "penetration": [
-              263,
-              350,
-              438
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              563,
-              750,
-              938
-            ]
-          },
-          {
-            "penetration": [
-              64,
-              85,
-              106
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              713,
-              950,
-              1188
-            ]
-          }
-        ],
         "turret": {
           "name": "VK 72.01 (K)",
           "weight": 40000,
@@ -8911,50 +5448,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 68,
         "speed_backward": 25,
-        "ammo": [
-          {
-            "penetration": [
-              186,
-              248,
-              310
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              293,
-              390,
-              488
-            ]
-          },
-          {
-            "penetration": [
-              201,
-              268,
-              335
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              293,
-              390,
-              488
-            ]
-          },
-          {
-            "penetration": [
-              45,
-              60,
-              75
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              360,
-              480,
-              600
-            ]
-          }
-        ],
         "turret": {
           "name": "Manticore 1955",
           "weight": 2800,
@@ -9025,50 +5518,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 45,
         "speed_backward": 18,
-        "ammo": [
-          {
-            "penetration": [
-              205,
-              273,
-              341
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              488,
-              650,
-              813
-            ]
-          },
-          {
-            "penetration": [
-              247,
-              329,
-              411
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              488,
-              650,
-              813
-            ]
-          },
-          {
-            "penetration": [
-              68,
-              90,
-              113
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              630,
-              840,
-              1050
-            ]
-          }
-        ],
         "turret": {
           "name": "114 SP2",
           "weight": 12000,
@@ -9139,50 +5588,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 55,
         "speed_backward": 20,
-        "ammo": [
-          {
-            "penetration": [
-              198,
-              264,
-              330
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              240,
-              320,
-              400
-            ]
-          },
-          {
-            "penetration": [
-              248,
-              330,
-              413
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              240,
-              320,
-              400
-            ]
-          },
-          {
-            "penetration": [
-              38,
-              50,
-              63
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              315,
-              420,
-              525
-            ]
-          }
-        ],
         "turret": {
           "name": "Т-22 ср.",
           "weight": 9000,
@@ -9253,50 +5658,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 50,
         "speed_backward": 15,
-        "ammo": [
-          {
-            "penetration": [
-              188,
-              250,
-              313
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              368,
-              490,
-              613
-            ]
-          },
-          {
-            "penetration": [
-              255,
-              340,
-              425
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              368,
-              490,
-              613
-            ]
-          },
-          {
-            "penetration": [
-              49,
-              65,
-              81
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              480,
-              640,
-              800
-            ]
-          }
-        ],
         "turret": {
           "name": "WZ-111 QL",
           "weight": 15000,
@@ -9367,50 +5728,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 50,
         "speed_backward": 15,
-        "ammo": [
-          {
-            "penetration": [
-              187,
-              249,
-              311
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING",
-            "damage": [
-              330,
-              440,
-              550
-            ]
-          },
-          {
-            "penetration": [
-              255,
-              340,
-              425
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              330,
-              440,
-              550
-            ]
-          },
-          {
-            "penetration": [
-              51,
-              68,
-              85
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              398,
-              530,
-              663
-            ]
-          }
-        ],
         "turret": {
           "name": "113 Beijing Opera",
           "weight": 12000,
@@ -9481,50 +5798,6 @@ https://api.tanki.su/wot/encyclopedia/vehicles/?application_id=a12842cff8d85bdbd
         },
         "speed_forward": 55,
         "speed_backward": 25,
-        "ammo": [
-          {
-            "penetration": [
-              196,
-              261,
-              326
-            ],
-            "stun": null,
-            "type": "ARMOR_PIERCING_CR",
-            "damage": [
-              293,
-              390,
-              488
-            ]
-          },
-          {
-            "penetration": [
-              263,
-              350,
-              438
-            ],
-            "stun": null,
-            "type": "HOLLOW_CHARGE",
-            "damage": [
-              293,
-              390,
-              488
-            ]
-          },
-          {
-            "penetration": [
-              79,
-              105,
-              131
-            ],
-            "stun": null,
-            "type": "HIGH_EXPLOSIVE",
-            "damage": [
-              360,
-              480,
-              600
-            ]
-          }
-        ],
         "turret": {
           "name": "121B",
           "weight": 10100,

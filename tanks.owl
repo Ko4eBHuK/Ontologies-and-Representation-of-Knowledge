@@ -1355,6 +1355,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeAimTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeAimTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeModeProperties"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SiegeMode"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeDispersion -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeDispersion">
