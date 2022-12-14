@@ -1,4 +1,31 @@
 <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks> <http://purl.org/dc/elements/1.1/creator> "Okladnikov Constantine"@en .
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks> <http://purl.org/dc/elements/1.1/description> "Ontology describes domain model of \"Mir tankov\" computer game"@en .
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks> <http://purl.org/dc/elements/1.1/description> "Отнология Tanks (Танки) описывает доменную модель игры \"Мир танков\""@ru .
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks> <http://purl.org/dc/elements/1.1/publisher> "Okladnikov Constantine"@en .
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks> <http://purl.org/dc/elements/1.1/title> "Tanks"@en .
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks> <http://purl.org/dc/elements/1.1/title> "Танки"@ru .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # 
 # 
 # #################################################################
@@ -200,7 +227,6 @@
 # http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#takePartIn
 <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#takePartIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#takePartIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
-<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#takePartIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
 <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#takePartIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
 <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#takePartIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Association> .
 <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#takePartIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Player> .
@@ -280,6 +306,12 @@
 <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResFrags> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#battleResultsProperty> .
 <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResFrags> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults> .
 <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResFrags> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+# 
+# http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResPlatoonNumber
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResPlatoonNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResPlatoonNumber> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#battleResultsProperty> .
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResPlatoonNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#BattleResults> .
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResPlatoonNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
 # 
 # http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResPlayerClanTag
 <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#batResPlayerClanTag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -823,6 +855,12 @@
 <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#shots> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
 <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#shots> <http://www.w3.org/2000/01/rdf-schema#comment> "Произведено выстрелов" .
 # 
+# http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeAimTime
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeAimTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeAimTime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeModeProperties> .
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeAimTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#SiegeMode> .
+<http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeAimTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+# 
 # http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeDispersion
 <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeDispersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeDispersion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#siegeModeProperties> .
@@ -1142,6 +1180,11 @@
 <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#xp> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#PlayerStatistic> .
 <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#xp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
 <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#xp> <http://www.w3.org/2000/01/rdf-schema#comment> "Суммарный опыт" .
+# 
+# urn:absolute:okladnikov.tanks#battleStatus
+<urn:absolute:okladnikov.tanks#battleStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<urn:absolute:okladnikov.tanks#battleStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#Battle> .
+<urn:absolute:okladnikov.tanks#battleStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 # 
 # 
 # 
