@@ -7,6 +7,31 @@
 4. Тяжелые танки какой нации наименее результативны?
 5. Кто повалил больше всего деревьев в среднем за бой?
 
+### 1. Сколько игроков в бою превысили свои средние показатели по урону на используемом танке?
+```
+player_success_query = """
+  PREFIX : <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#>
+  PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+  SELECT (COUNT(?player) as ?superiorPlayers) WHERE {
+    ?battleResults a :BattleResults .
+    ?battleResults :isResultsOfPlayer ?player .
+    ?battleResults :playedOn ?tank .
+    ?battleResults :batResDamage ?damageInBattle .
+    ?playerStatOnTank :tankStatisticOf ?player .
+    ?playerStatOnTank :tankStatisticOn ?tank .
+    ?playerStatOnTank :concreteTankDamageDealt ?damageDealt .
+    ?playerStatOnTank :concreteTankBattles ?battlesOnTank .
+    FILTER (xsd:float(?damageInBattle) > ?damageDealt/?battlesOnTank)
+  }
+"""
+
+for row in tanks_ontology_graph.query(player_success_query):
+    print(f"{row.superiorPlayers} of players surpassed themselves")
+```
+```
+Output: 85 of players surpassed themselves
+```
+
 ### 5. Кто повалил больше всего деревьев в среднем за бой?
 ```
 max_treesCut_query = """
