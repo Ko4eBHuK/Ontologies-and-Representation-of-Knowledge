@@ -8,7 +8,7 @@
 5. Кто повалил больше всего деревьев в среднем за бой?
 
 ### 5. Кто повалил больше всего деревьев в среднем за бой?
-'''
+```
 max_treesCut_query = """
   PREFIX : <http://www.semanticweb.org/ko4ebhuk/ontologies/2022/10/tanks#>
   PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -25,7 +25,7 @@ max_treesCut_query = """
 
 for row in tanks_ontology_graph.query(max_treesCut_query):
     print(f"{row.name} avg_cuts {row.result}")
-'''
-'''
+```
+```
 Output: 15_MunyT_ADA avg_cuts 3.426887094707164
-'''
+```
