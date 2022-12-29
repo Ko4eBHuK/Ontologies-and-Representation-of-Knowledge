@@ -1,0 +1,37 @@
+{
+  "@context" : {
+    "properties" : {
+      "@id" : "http://rdfs.org/ns/void#properties"
+    },
+    "distinctObjects" : {
+      "@id" : "http://rdfs.org/ns/void#distinctObjects"
+    },
+    "Dataset" : {
+      "@id" : "http://rdfs.org/ns/void#Dataset"
+    },
+    "triples" : {
+      "@id" : "http://rdfs.org/ns/void#triples"
+    },
+    "class" : {
+      "@id" : "http://rdfs.org/ns/void#class"
+    },
+    "classPartition" : {
+      "@id" : "http://rdfs.org/ns/void#classPartition"
+    },
+    "classes" : {
+      "@id" : "http://rdfs.org/ns/void#classes"
+    },
+    "property" : {
+      "@id" : "http://rdfs.org/ns/void#property"
+    },
+    "distinctSubjects" : {
+      "@id" : "http://rdfs.org/ns/void#distinctSubjects"
+    },
+    "propertyPartition" : {
+      "@id" : "http://rdfs.org/ns/void#propertyPartition"
+    },
+    "entities" : {
+      "@id" : "http://rdfs.org/ns/void#entities"
+    }
+  }
+}
