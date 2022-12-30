@@ -1,1 +1,2 @@
 filled-tanks-ontology.owl filter=lfs diff=lfs merge=lfs -text
+tanks_ontology.csv filter=lfs diff=lfs merge=lfs -text
